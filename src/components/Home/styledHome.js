@@ -8,9 +8,9 @@ export const MainHome = styled.main`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    'sec1 sec1 sec2'
-    'sec3 sec3 sec2'
-    'sec4 sec4 sec5';
+    'sec1 sec1 sec1'
+    'sec2 sec2 sec2'
+    'sec3 sec3 sec3';
 
     .secao1 {grid-area: sec1;}
     .secao2 {grid-area: sec2;}
@@ -39,5 +39,21 @@ export const SectionGeral = styled.section`
     @media (max-width: 768px) {
         background-color: orange;
 
+    }
+
+    .video-background {
+        /*position: fixed;*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .video-background video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 `

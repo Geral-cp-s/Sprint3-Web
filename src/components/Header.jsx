@@ -32,9 +32,9 @@ const Header = () => {
          <header className="header">
             <nav className="nav-container">
                <div className="nav__data">
-                  <a href="index.html" className="nav__logo">
-                     <img src="./src/img/G4_Tech-branco.png" alt="Logo" />
-                  </a>
+                  <Link to="/" className="nav__logo">
+                     <img src="./src/assets/img/G4_Tech-branco.png" alt="Logo" />
+                  </Link>
                   
                   {/* Botão de Toggle do Menu */}
                   <div className="nav__toggle" id="nav-toggle">
