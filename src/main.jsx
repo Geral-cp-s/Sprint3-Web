@@ -10,6 +10,7 @@ import QuemSomos from './routes/QuemSomos.jsx'
 import Comparativos from './routes/Comparativos.jsx'
 import Equipes from './routes/Equipes.jsx'
 import Mahindra from './routes/Mahindra.jsx'
+import GlobalStyled from './global-styled.js'
 
 const router = createBrowserRouter([
   {
@@ -39,5 +40,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router = {router} />
+    <GlobalStyled/>
   </StrictMode>,
 )
