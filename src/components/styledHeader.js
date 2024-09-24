@@ -64,7 +64,7 @@ export const  HeaderMenu = styled.nav`
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: var(--black-color-light);
     padding: 1rem 0;
     min-width: 180px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
