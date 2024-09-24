@@ -4,7 +4,7 @@ export default function Sec4(){
 
     return(
         <SectionGeral className="secao4">
-            <h2>Matéria 4</h2>
+            <h2>Carro</h2>
         </SectionGeral>
     )
 }
