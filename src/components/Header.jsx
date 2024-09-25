@@ -35,7 +35,7 @@ const Header = () => {
             <nav className="nav-container">
                <div className="nav__data">
                   <Link to="/" className="nav__logo">
-                     <img src="./src/assets/img/G4_Tech-branco.png" alt="Logo" />
+                     <img src="./public/img/G4_Tech-branco.png" alt="Logo" />
                   </Link>
                   
                   {/* Botão de Toggle do Menu */}
