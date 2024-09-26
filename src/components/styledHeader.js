@@ -16,7 +16,8 @@ export const  HeaderMenu = styled.nav`
   }
 
   .nav__logo img {
-    height: 60px;
+    height: 80px;
+
   }
 
   .nav__data {
@@ -48,6 +49,7 @@ export const  HeaderMenu = styled.nav`
     padding: 0.5rem 1rem;
     transition: color 0.3s ease;
     text-align: left; /* Alinha o texto à esquerda */
+    font-size: 20px;
   }
 
   .nav__link:hover {
@@ -70,6 +72,9 @@ export const  HeaderMenu = styled.nav`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left; /* Alinhamento de texto à esquerda */
     padding-left: 0.5rem; /* Movendo o texto para a esquerda */
+    border-radius: 10px;
+    
+    
   }
 
   .dropdown__item:hover .dropdown__menu {
@@ -93,6 +98,7 @@ export const  HeaderMenu = styled.nav`
   .dropdown__arrow {
     margin-left: 0.5rem;
     font-size: 1rem;
+    transition: transform .4s;
   }
 
   /* Mobile */
