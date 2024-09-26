@@ -58,6 +58,14 @@ body {
   padding: 20px;
   box-sizing: border-box;
 }
+#root{
+      min-height: 100dvh;
+      display:flex ;
+      flex-direction: column;
+
+}
+
+
 `
 
 export default GlobalStyled

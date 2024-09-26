@@ -6,7 +6,6 @@ export const FooterGeral = styled.footer`
   color: white;
   text-align: center;
   padding: 1rem;
-  bottom: 0;
   width: 100%;
 
 `
