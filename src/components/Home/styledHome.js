@@ -41,19 +41,5 @@ export const SectionGeral = styled.section`
 
     }
 
-    .video-background {
-        /*position: fixed;*/
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        z-index: -1;
-    }
 
-    .video-background video{
-        width: 50%;
-        height: 50%;
-        object-fit: cover;
-    }
 `

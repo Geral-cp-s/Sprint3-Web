@@ -18,6 +18,7 @@ export const  HeaderMenu = styled.nav`
   .nav__logo img {
     height: 80px;
 
+
   }
 
   .nav__data {
