@@ -12,6 +12,7 @@ import Equipes from './routes/Equipes.jsx'
 import Mahindra from './routes/Mahindra.jsx'
 import GlobalStyled from './global-styled.js'
 
+
 const router = createBrowserRouter([
   {
     //Elemento PAI
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       {path:'/quem-somos', element:<QuemSomos/>},
       {path:'/comparativos', element:<Comparativos/>},
       {path:'/equipes', element:<Equipes/>},
+
 
       //Chamando as outras equipes
       {path:'/equipes/mahindra', element:<Mahindra/>}

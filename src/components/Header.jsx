@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 // O MENU DE OPÇOES NA TELA MENOR NAO APARECE
 
+
 const Header = () => {
    useEffect(() => {
       const showMenu = (toggleId, navId) => {

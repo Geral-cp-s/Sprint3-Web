@@ -8,7 +8,7 @@ const MainLogin = styled.main`
         justify-content: center;
         flex-grow: 1;
         text-align: center;
-        height: 90dvh; 
+        height: 90dvh;
     }
 
 
@@ -196,10 +196,10 @@ const MainLogin = styled.main`
         transform: translate(-100%);
     }
     .overlay{
-        background-image: url('/img/Login/pexels-alexwolfmx-14401637(3).jpg'); /* Caminho para a imagem */
+        background-image: url(public/img/Login/pexels-alexwolfmx-14401647.jpg); /* Caminho para a imagem */
         background-repeat: no-repeat;
         background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
-        background-position: center; /* Centraliza a imagem */
+        background-position: center; 
         color: #fff;
         position: relative;
         left: -100%;
