@@ -1,8 +1,9 @@
 // src/components/Header.js
 
 import { useEffect } from 'react';
-import { HeaderMenu } from './StyledHeader';
+import { HeaderMenu } from './styledHeader';
 import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   useEffect(() => {
