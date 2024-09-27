@@ -3,309 +3,302 @@ import styled from "styled-components"
 
 const MainLogin = styled.main`
     
+    .body{
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        text-align: center;
+        height: 90dvh; 
+    }
 
+
+
+    h1{
+        font-weight: 700;
+        letter-spacing: -1.5px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    h1.titulo{
+        font-size: 45px;
+        line-height: 45px;
+        margin: 0;
+        text-shadow: 0 0 10px rgba(233, 41, 41, 0.5);
+    }
+    p{
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        margin: 20px 0 30px;
+        text-shadow: 0 0 10px rgba(233, 41, 41, 0.5);
+    }
+    span{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    a{
+        color: #333;
+        font-size: 14px;
+        text-decoration: none;
+        margin: 15px 0;
+        transition: 0.3s ease-in-out;
+    }
+    a:hover{
+        color: #ad3d3d;
+    }
+    .content{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    .content .checkbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content input{
+        accent-color: #333;
+        width: 12px;
+        height: 12px;
+    }
+    .content label{
+        font-size: 14px;
+        user-select: none;
+        padding-left: 5px;
+    }
+    button{
+        position: relative;
+        border-radius: 20px;
+        border: 1px solid #c53333;
+        background-color: #af2424;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 10px;
+        padding: 12px 80px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        transition: 0.3s ease-in-out;
+    }
+    button:hover{
+        letter-spacing: 3px;
+    }
+    button:active{
+        transform: scale(0.9);
+    }
+    button:focus{
+        outline:none
+    }
+    button.ghost{
+        background-color: rgba(255, 42, 42, 0.2);
+        border: 2px solid #fff;
+        color: #fff;
+    }
+    button.ghost i{
+        position: absolute;
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+    button.ghost i.register{
+        right: 70px;
+    }
+    button.ghost i.login{
+        left: 70px;
+    }
+    button.ghost i.register:hover{
+        right: 40px;
+    }
+    button.ghost i.login:hover{
+        left: 40px;
+    }
+    form{
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px;
+        height: 100%;
+        text-align: center;
+    }
+    input{
+        background-color: #eee;
+        border-radius: 10px;
+        border: none;
+        padding: 12px 15px;
+        margin: 8px 0;
+        width: 100%;
+    }
     .container{
-    display: flex;
-    background-color: #f6f5f7;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-    height: 100vh;
-}
-h1{
-    font-weight: 700;
-    letter-spacing: -1.5px;
-    margin: 0;
-    margin-bottom: 15px;
-}
-h1.titulo{
-    font-size: 45px;
-    line-height: 45px;
-    margin: 0;
-    text-shadow: 0 0 10px rgba(233, 41, 41, 0.5);
-}
-p{
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    margin: 20px 0 30px;
-    text-shadow: 0 0 10px rgba(233, 41, 41, 0.5);
-}
-span{
-    font-size: 14px;
-    margin-top: 15px;
-}
-a{
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0;
-    transition: 0.3s ease-in-out;
-}
-a:hover{
-    color: #ad3d3d;
-}
-.content{
-    display: flex;
-    width: 100%;
-    height: 50px;
-    align-items: center;
-    justify-content: space-around;
-
-}
-.content .checkbox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.content input{
-    accent-color: #333;
-    width: 12px;
-    height: 12px;
-}
-.content label{
-    font-size: 14px;
-    user-select: none;
-    padding-left: 5px;
-}
-button{
-    position: relative;
-    border-radius: 20px;
-    border: 1px solid #c53333;
-    background-color: #af2424;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 10px;
-    padding: 12px 80px;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    transition: 0.3s ease-in-out;
-}
-button:hover{
-    letter-spacing: 3px;
-}
-button:active{
-    transform: scale(0.9s);
-}
-button:focus{
-    outline:none
-}
-button.ghost{
-    background-color: rgba(255, 42, 42, 0.2);
-    border: 2px solid #fff;
-    color: #fff;
-}
-button.ghost i{
-    position: absolute;
-    opacity: 1;
-    transition: 0.3s ease-in-out;
-}
-button.ghost i.register{
-    right: 70px;
-}
-button.ghost i.login{
-    left: 70px;
-}
-button.ghost i.register:hover{
-    right: 40px;
-}
-button.ghost i.login:hover{
-    left: 40px;
-}
-form{
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 50px;
-    height: 100%;
-    text-align: center;
-}
-input{
-    background-color: #eee;
-    border-radius: 10px;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    width: 100%;
-}
-.container{
-    background-color: #fff;
-    border-radius: 25px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    position: relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 500px;
-}
-.form-container{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    transition: all 0.6s ease-in-out;
-}
-.login-container{
-    left: 0;
-    width: 50%;
-    z-index: 2;
-}
-.container.right-panel-active .login-container{
-    transform: translateX(100%);
-}
-.register-container{
-    left: 0;
-    width: 50%;
-    opacity: 0;
-    z-index: 1;
-}
-.container.right-panel-active .register-container{
-    transform: translateX(100%);
-    opacity: 1;
-    z-index: 5;
-    animation: show 0.5s;
-}
-@keyframes show{
-    0%,
-    49.99%{
+        background-color: #fff;
+        border-radius: 25px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        position: relative;
+        overflow: hidden;
+        width: 768px;
+        max-width: 100%;
+        min-height: 500px;
+    }
+    .form-container{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transition: all 0.6s ease-in-out;
+    }
+    .login-container{
+        left: 0;
+        width: 50%;
+        z-index: 2;
+    }
+    .container.right-panel-active .login-container{
+        transform: translateX(100%);
+    }
+    .register-container{
+        left: 0;
+        width: 50%;
         opacity: 0;
         z-index: 1;
     }
-    50%,
-    100%{
+    .container.right-panel-active .register-container{
+        transform: translateX(100%);
         opacity: 1;
         z-index: 5;
+        animation: show 0.5s;
     }
-}
-.overlay-container{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    transition: transform 0.6s ease-in-out;
-    z-index: 100;
-}
-.container.right-panel-active .overlay-container{
-    transform: translate(-100%);
-}
-.overlay{
-    background-image: url('/img/Login/pexels-alexwolfmx-14401637(3).jpg'); /* Caminho para a imagem */
-    background-repeat: no-repeat;
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
-    background-position: center; /* Centraliza a imagem */
-    color: #fff;
-    position: relative;
-    left: -100%;
-    height: 100%;
-    width: 200%;
-    transform: translateX(0);
-    transition: transform 0.6s ease-in-out;
-}
-
-
-.overlay::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: linear-gradient(
-        to top,
-        rgba(46, 94, 109, 0.4) 40%,
-        rgba(46, 94, 109, 0)
-    );
-}
-.container.right-panel-active .overlay{
-    transform: translateX(50%);
-}
-.overlay-panel{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    top: 0;
-    height: 100%;
-    width: 50%;
-    transform: translateX(0);
-    transition: transform 0.6s ease-in-out;
-}
-.overlay-left{
-    transform: translateX(-20%);
-}
-.container.right-panel-active .overlay-left{
-    transform: translateX(0);
-}
-
-.overlay-right{
-    right: 0;
-    transform:translateX(0);
-    
-}
-.container.right-panel-active .overlay-right{
-    transform: translateX(20%);
-}
-.social-container{
-    margin: 20px 0;
-}
-.social-container a{
-    border: 1px solid #dddddddd;
-    border: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    height: 50px;
-    width: 40px;
-    transition: 0.3s ease-in-out;
-}
-.social-container a:hover{
-    border: 1px solid #b74b4b;
-}
-@media screen and (max-width: 1000px) {
-
-    .container{
-        width: 100%;
-        height: 70%;
+    @keyframes show{
+        0%,
+        49.99%{
+            opacity: 0;
+            z-index: 1;
+        }
+        50%,
+        100%{
+            opacity: 1;
+            z-index: 5;
+        }
     }
-    .form-container{
-        font-size: 20px;
+    .overlay-container{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        transition: transform 0.6s ease-in-out;
+        z-index: 100;
     }
-    .social-container{
-        display: flex;
-    }
-    .botao{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-    }
-    .ghost{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-    }
-    .input{
-        width: 150px;
+    .container.right-panel-active .overlay-container{
+        transform: translate(-100%);
     }
     .overlay{
-        background-image:url(img/fast-1281628_1280.jpg); 
-        background-size: 230%; 
-        background-position: 10%;       
+        background-image: url('/img/Login/pexels-alexwolfmx-14401637(3).jpg'); /* Caminho para a imagem */
+        background-repeat: no-repeat;
+        background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
+        background-position: center; /* Centraliza a imagem */
+        color: #fff;
+        position: relative;
+        left: -100%;
+        height: 100%;
+        width: 200%;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
     }
-}
 
 
+    .overlay::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(
+            to top,
+            rgba(46, 94, 109, 0.4) 40%,
+            rgba(46, 94, 109, 0)
+        );
+    }
+    .container.right-panel-active .overlay{
+        transform: translateX(50%);
+    }
+    .overlay-panel{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+    }
+    .overlay-left{
+        transform: translateX(-20%);
+    }
+    .container.right-panel-active .overlay-left{
+        transform: translateX(0);
+    }
 
+    .overlay-right{
+        right: 0;
+        transform:translateX(0);
+        
+    }
+    .container.right-panel-active .overlay-right{
+        transform: translateX(20%);
+    }
+    .social-container{
+        margin: 20px 0;
+    }
+    .social-container a{
+        border: 1px solid #dddddddd;
+        border: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        height: 50px;
+        width: 40px;
+        transition: 0.3s ease-in-out;
+    }
+    .social-container a:hover{
+        border: 1px solid #b74b4b;
+    }
+    @media screen and (max-width: 1000px) {
+
+        .container{
+            width: 100%;
+            height: 70%;
+        }
+        .form-container{
+            font-size: 20px;
+        }
+        .social-container{
+            display: flex;
+        }
+        .botao{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+        }
+        .ghost{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+        }
+        .input{
+            width: 150px;
+        }
+
+    }
 
 
 `
@@ -325,7 +318,7 @@ const Login = () => {
 
     return (
         <MainLogin>
-
+            <main className='body'>
             <div id="container" className={`container ${isRightPanelActive ? 'right-panel-active' : ''}`}>
                 <div className="form-container register-container">
                     <form action="#">
@@ -344,7 +337,7 @@ const Login = () => {
                                 <img src="/img/Login/icons8-linkedin-50.png" className="social" />
                             </a>
                             <a href="https://www.google.com">
-                                <img src="/img/Login/icons8-google-50.png" className="social" />
+                                <img src="public/img/Login/icons8-google-logo-50.png" className="social" />
                             </a>
                         </div>
                     </form>
@@ -371,7 +364,7 @@ const Login = () => {
                                 <img src="/img/Login/icons8-linkedin-50.png" className="social" />
                             </a>
                             <a href="https://www.google.com">
-                                <img src="/img/Login/icons8-google-50.png" className="social" />
+                                <img src="public/img/Login/icons8-google-logo-50.png" className="social" />
                             </a>
                         </div>
                     </form>
@@ -394,6 +387,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            </main>
 
 
         </MainLogin>
