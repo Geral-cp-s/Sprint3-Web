@@ -12,6 +12,7 @@ const Mahindra = () => {
   return (
     <div>
         <Sede />
+        <WhoIs />
         <DriversContainer>
             <Mortara />
             <DeVries />
@@ -19,7 +20,7 @@ const Mahindra = () => {
         <Car />
         <Team />
         <Statistics />
-        <WhoIs />
+        
     </div>
   );
 };

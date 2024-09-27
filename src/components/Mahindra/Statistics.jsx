@@ -23,15 +23,15 @@ function Statistics() {
       <StatisticsHeading>Estatísticas da temporada</StatisticsHeading>
       <StatsGrid>
         <StatBox>
-          <span>Classificação</span>
+          <span>Classificação: </span>
           <span id="contador1">+{contador1}</span>
         </StatBox>
         <StatBox>
-          <span>Vitórias</span>
+          <span>Vitórias: </span>
           <span>0</span>
         </StatBox>
         <StatBox>
-          <span>Pódios</span>
+          <span>Pódios: </span>
           <span>0</span>
         </StatBox>
       </StatsGrid>
