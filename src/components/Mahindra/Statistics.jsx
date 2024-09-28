@@ -13,7 +13,7 @@ function Statistics() {
       if (valor1 === 11) {
         clearInterval(tempo1);
       }
-    }, 1000);
+    }, 500);
 
     return () => clearInterval(tempo1);
   }, []);

@@ -54,7 +54,7 @@ const Header = () => {
                   <li><Link to="/equipes/mahindra" className="dropdown__link">Mahindra Racing</Link></li>
                   <li><Link to="#" className="dropdown__link">Porsche</Link></li>
                   <li><Link to="#" className="dropdown__link">Neon McLaren</Link></li>
-                  <li><Link to="/equipes" className="dropdown__link">Outras equipes</Link></li>
+                  <li><Link to="/equipes" className="dropdown__link">Todas as equipes</Link></li>
                 </ul>
               </li>
 

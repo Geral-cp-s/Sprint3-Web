@@ -18,8 +18,6 @@ export const HeaderMenu = styled.nav`
     transform: scale(1.2); /* Aumente a escala do logo (ajuste conforme necessário) */
     transition: transform 0.3s ease; /* Adicione uma transição suave para o efeito de hover */
     height: 80px;
-
-
   }
 
   .nav__logo img:hover {
@@ -54,7 +52,7 @@ export const HeaderMenu = styled.nav`
     font-size: 20px;
 
     &:hover {
-      color: #00aaff;
+      color: #00aaff; /* Mudando a cor do texto ao passar o mouse */
       transform: translateY(-2px);
       text-decoration: underline; /* Adiciona underline ao passar o mouse */
     }
