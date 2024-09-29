@@ -33,7 +33,10 @@ const Header = () => {
             </Link>
 
             {/* Botão de Toggle do Menu */}
+
+            {/* alterar aqui!!! */}
             <div className="nav__toggle" id="nav-toggle">
+              {/* <button>teste</button> */}
               <i className="ri-menu-line nav__burger"></i>
               <i className="ri-close-line nav__close"></i>
             </div>

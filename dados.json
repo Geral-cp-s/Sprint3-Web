@@ -1,0 +1,777 @@
+{
+  "registro": [
+    {
+      "id": "f532",
+      "nome": "dada",
+      "senha": "1234",
+      "email": "gustavoribeiro4523@gmail.com"
+    },
+    {
+      "id": "7dbb",
+      "nome": "dada",
+      "senha": "1234",
+      "email": "gustavoribeiro4523@gmail.com"
+    },
+    {
+      "id": "b61a",
+      "nome": "dada",
+      "senha": "1234",
+      "email": "gustavoribeiro4523@gmail.com"
+    },
+    {
+      "id": "c323",
+      "nome": "dada",
+      "senha": "1234",
+      "email": "gustavoribeiro4523@gmail.com"
+    },
+    {
+      "0": {
+        "id": "f532",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "1": {
+        "id": "7dbb",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "2": {
+        "id": "b61a",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "3": {
+        "id": "c323",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "id": "2e6f",
+      "nome": "aaa",
+      "email": "aaa@gmail.com",
+      "senha": "123"
+    },
+    {
+      "0": {
+        "id": "f532",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "1": {
+        "id": "7dbb",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "2": {
+        "id": "b61a",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "3": {
+        "id": "c323",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "id": "dd0a",
+      "nome": "aaa",
+      "email": "aaa@gmail.com",
+      "senha": "123"
+    },
+    {
+      "0": {
+        "id": "f532",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "1": {
+        "id": "7dbb",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "2": {
+        "id": "b61a",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "3": {
+        "id": "c323",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "4": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "id": "2e6f",
+        "nome": "aaa",
+        "email": "aaa@gmail.com",
+        "senha": "123"
+      },
+      "5": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "id": "dd0a",
+        "nome": "aaa",
+        "email": "aaa@gmail.com",
+        "senha": "123"
+      },
+      "id": "5f76",
+      "nome": "adm",
+      "email": "adm@gmail.com",
+      "senha": "123"
+    },
+    {
+      "0": {
+        "id": "f532",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "1": {
+        "id": "7dbb",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "2": {
+        "id": "b61a",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "3": {
+        "id": "c323",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "4": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "id": "2e6f",
+        "nome": "aaa",
+        "email": "aaa@gmail.com",
+        "senha": "123"
+      },
+      "5": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "id": "dd0a",
+        "nome": "aaa",
+        "email": "aaa@gmail.com",
+        "senha": "123"
+      },
+      "6": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "4": {
+          "0": {
+            "id": "f532",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "1": {
+            "id": "7dbb",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "2": {
+            "id": "b61a",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "3": {
+            "id": "c323",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "id": "2e6f",
+          "nome": "aaa",
+          "email": "aaa@gmail.com",
+          "senha": "123"
+        },
+        "5": {
+          "0": {
+            "id": "f532",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "1": {
+            "id": "7dbb",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "2": {
+            "id": "b61a",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "3": {
+            "id": "c323",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "id": "dd0a",
+          "nome": "aaa",
+          "email": "aaa@gmail.com",
+          "senha": "123"
+        },
+        "id": "5f76",
+        "nome": "adm",
+        "email": "adm@gmail.com",
+        "senha": "123"
+      },
+      "id": "b81a"
+    },
+    {
+      "0": {
+        "id": "f532",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "1": {
+        "id": "7dbb",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "2": {
+        "id": "b61a",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "3": {
+        "id": "c323",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "4": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "id": "2e6f",
+        "nome": "aaa",
+        "email": "aaa@gmail.com",
+        "senha": "123"
+      },
+      "5": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "id": "dd0a",
+        "nome": "aaa",
+        "email": "aaa@gmail.com",
+        "senha": "123"
+      },
+      "6": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "4": {
+          "0": {
+            "id": "f532",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "1": {
+            "id": "7dbb",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "2": {
+            "id": "b61a",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "3": {
+            "id": "c323",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "id": "2e6f",
+          "nome": "aaa",
+          "email": "aaa@gmail.com",
+          "senha": "123"
+        },
+        "5": {
+          "0": {
+            "id": "f532",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "1": {
+            "id": "7dbb",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "2": {
+            "id": "b61a",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "3": {
+            "id": "c323",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "id": "dd0a",
+          "nome": "aaa",
+          "email": "aaa@gmail.com",
+          "senha": "123"
+        },
+        "id": "5f76",
+        "nome": "adm",
+        "email": "adm@gmail.com",
+        "senha": "123"
+      },
+      "id": "5f58"
+    },
+    {
+      "0": {
+        "id": "f532",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "1": {
+        "id": "7dbb",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "2": {
+        "id": "b61a",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "3": {
+        "id": "c323",
+        "nome": "dada",
+        "senha": "1234",
+        "email": "gustavoribeiro4523@gmail.com"
+      },
+      "4": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "id": "2e6f",
+        "nome": "aaa",
+        "email": "aaa@gmail.com",
+        "senha": "123"
+      },
+      "5": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "id": "dd0a",
+        "nome": "aaa",
+        "email": "aaa@gmail.com",
+        "senha": "123"
+      },
+      "6": {
+        "0": {
+          "id": "f532",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "1": {
+          "id": "7dbb",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "2": {
+          "id": "b61a",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "3": {
+          "id": "c323",
+          "nome": "dada",
+          "senha": "1234",
+          "email": "gustavoribeiro4523@gmail.com"
+        },
+        "4": {
+          "0": {
+            "id": "f532",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "1": {
+            "id": "7dbb",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "2": {
+            "id": "b61a",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "3": {
+            "id": "c323",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "id": "2e6f",
+          "nome": "aaa",
+          "email": "aaa@gmail.com",
+          "senha": "123"
+        },
+        "5": {
+          "0": {
+            "id": "f532",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "1": {
+            "id": "7dbb",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "2": {
+            "id": "b61a",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "3": {
+            "id": "c323",
+            "nome": "dada",
+            "senha": "1234",
+            "email": "gustavoribeiro4523@gmail.com"
+          },
+          "id": "dd0a",
+          "nome": "aaa",
+          "email": "aaa@gmail.com",
+          "senha": "123"
+        },
+        "id": "5f76",
+        "nome": "adm",
+        "email": "adm@gmail.com",
+        "senha": "123"
+      },
+      "id": "8972"
+    }
+  ],
+  "forum": [
+    {
+      "id": "3d88",
+      "nome": "adm",
+      "email": "adm@gmail.com",
+      "descricao": "eu sou o adm"
+    },
+    {
+      "id": "c1be",
+      "nome": "adm",
+      "email": "adm@gmail.com",
+      "descricao": "eu sou o adm"
+    },
+    {
+      "id": "15ad",
+      "nome": "adm1",
+      "email": "adm1@gmail.com",
+      "descricao": "eu sou o adm1"
+    },
+    {
+      "id": "b0ac",
+      "nome": "adm1",
+      "email": "adm1@gmail.com",
+      "descricao": "eu sou o adm1"
+    },
+    {
+      "id": "8064",
+      "nome": "adm2",
+      "email": "adm2@gmail.com",
+      "descricao": "eu sou o adm2"
+    },
+    {
+      "id": "96f0",
+      "nome": "guilherme",
+      "email": "reidoIF@gmail.com",
+      "descricao": "sou rei do if"
+    },
+    {
+      "id": "8ac2",
+      "nome": "guilherme",
+      "email": "reidoIF@gmail.com",
+      "descricao": "sou rei do if"
+    },
+    {
+      "id": "ead6",
+      "nome": "guilherme",
+      "email": "reidoIF@gmail.com",
+      "descricao": "sou rei do if"
+    },
+    {
+      "id": "338b",
+      "nome": "guilherme",
+      "email": "reidoIF@gmail.com",
+      "descricao": "sou rei do if"
+    },
+    {
+      "id": "bf99",
+      "nome": "guilherme",
+      "email": "reidoIF@gmail.com",
+      "descricao": "sou rei do if"
+    },
+    {
+      "id": "4490",
+      "nome": "",
+      "email": "",
+      "descricao": ""
+    }
+  ]
+}

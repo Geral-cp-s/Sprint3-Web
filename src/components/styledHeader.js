@@ -145,7 +145,7 @@ export const HeaderMenu = styled.nav`
     .dropdown__menu {
       position: relative;
       box-shadow: none;
-      display: none; /* Oculto por padrão */
+      /* display: none; Oculto por padrão */
     }
 
     .dropdown__item:hover .dropdown__menu {

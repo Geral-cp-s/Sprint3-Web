@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState,useRef,useEffect } from 'react';
 import styled from "styled-components"
+import { useParams,useNavigate } from "react-router-dom"
 
 const MainLogin = styled.main`
     
@@ -305,7 +306,80 @@ const MainLogin = styled.main`
 
 const Login = () => {
 
+
+    let {id} =useParams();
+    const navigate = useNavigate();
+
+    
+    const email = useRef();
+    const senha = useRef();
+
     const [isRightPanelActive, setIsRightPanelActive] = useState(false);
+
+
+    const [registro,setRegistro] = useState({
+        id,
+        nome:'',
+        senha:'',
+        email:'',
+
+    });
+
+    
+    const handleChange=(e)=>{
+        setRegistro({...registro,[e.target.name]: e.target.value});
+    }
+    
+
+
+    sessionStorage.getItem("email");
+    sessionStorage.getItem("senha");
+    const handleLogin = (e) => {
+        //previne que sua pagina faça qualquer modificação ex. load
+        e.preventDefault();
+
+        if(email.current.value ==!  "" && senha.current.value ==! "" ){
+            alert("usuario/senha inválidos")
+
+        }
+        else {
+            sessionStorage.setItem("email", "email");
+            sessionStorage.setItem("senha", "senha");
+            navigate("/pistas");
+        }
+    }
+
+    useEffect(() => {
+        //pega o link da url
+        fetch("http://localhost:5000/registro")
+            //promise
+            .then((res) => {
+                //converte os dados para json
+                return res.json();
+            })
+            .then((res) => {
+                //recebe as alterações da variavel
+                setRegistro(res)
+            })
+        //retrona um array vazio
+    }, [])
+
+    const handleSubmit=(e)=>{
+        //previne que ocorra qualquer modificação no form ex. load
+        e.preventDefault();
+        fetch(`http://localhost:5000/registro${id ? id :''}`,{
+            method:"post",
+            headers: {
+                'Content-type':'application/json',
+            },
+            //prepara para receber os dados em json
+            body:JSON.stringify(registro),
+            //então se estiver tudo certo ele direciona para o componente que deseja
+        }).then(()=>{
+            // navigate("/listarUsuarios")
+        })
+    }
+    
 
     const handleRegistrationClick = () => {
         setIsRightPanelActive(true);
@@ -321,12 +395,12 @@ const Login = () => {
             <main className='body'>
             <div id="container" className={`container ${isRightPanelActive ? 'right-panel-active' : ''}`}>
                 <div className="form-container register-container">
-                    <form action="#">
+                    <form action="#" onSubmit={handleSubmit}>
                         <h1 className="registro-texto">Registre-se aqui</h1>
-                        <input className="input" type="text" placeholder="Nome" />
-                        <input className="input" type="email" placeholder="E-mail" />
-                        <input className="input" type="password" placeholder="Senha" />
-                        <input className="input" type="password" placeholder="Confirme sua senha" />
+                        <input className="input" type="text" placeholder="Nome" name="nome" value={registro.nome} onChange={handleChange} />
+                        <input className="input" type="email" placeholder="E-mail"  name="email" value={registro.email} onChange={handleChange}/>
+                        <input className="input" type="password" placeholder="Senha" name="senha" value={registro.senha} onChange={handleChange}/>
+                        {/* <input className="input" type="password" placeholder="Confirme sua senha" /> */}
                         <button className="botao" onClick={handleRegistrationClick}>Registrar</button>
                         <span>Ou use sua conta</span>
                         <div className="social-container">
@@ -344,10 +418,10 @@ const Login = () => {
                 </div>
 
                 <div className="form-container login-container">
-                    <form action="#">
+                    <form action="#" onSubmit={handleLogin}>
                         <h1>Logue aqui</h1>
-                        <input className="input" type="email" placeholder="E-mail" id="usuario" />
-                        <input className="input" type="password" placeholder="Senha" id="senha" />
+                        <input className="input" type="email" placeholder="E-mail" id="usuario" ref={email} />
+                        <input className="input" type="password" placeholder="Senha" id="senha"  ref={senha}/>
                         <div className="content">
                             <div className="checkbox">
                                 <input type="checkbox" name="checkbox" id="checkbox" />
