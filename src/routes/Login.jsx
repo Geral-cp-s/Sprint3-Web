@@ -10,6 +10,7 @@ const MainLogin = styled.main`
         flex-grow: 1;
         text-align: center;
         height: 90dvh;
+        margin: 25px;
     }
 
 
@@ -74,7 +75,7 @@ const MainLogin = styled.main`
     }
     button{
         position: relative;
-        border-radius: 20px;
+        border-radius: 15px;
         border: 1px solid #c53333;
         background-color: #af2424;
         color: #fff;
