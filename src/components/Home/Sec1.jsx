@@ -5,7 +5,7 @@ export default function Sec1() {
         <>
         <div className="video-background">
         <video autoPlay loop muted width={'300%'}>
-        <source src="/formulae.mp4" type="video/mp4" />
+        <source src="/video.mp4" type="video/mp4" />
         </video>
         </div>
         </>

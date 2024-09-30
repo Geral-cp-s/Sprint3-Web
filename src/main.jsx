@@ -12,6 +12,7 @@ import Equipes from './routes/Equipes.jsx'
 import Mahindra from './routes/Mahindra.jsx'
 import GlobalStyled from './global-styled.js'
 import Forum from './components/Forum.jsx'
+import Projeto from  './routes/Projeto.jsx'
 
 
 const router = createBrowserRouter([
@@ -27,12 +28,13 @@ const router = createBrowserRouter([
       {path:'/login', element:<Login/>},
       {path:'/quem-somos', element:<QuemSomos/>},
       {path:'/comparativos', element:<Comparativos/>},
+      {path:'/projeto', element:<Projeto/>},
       {path:'/equipes', element:<Equipes/>},
       {path:'/forum', element:<Forum/>},
 
 
 
-      //Chamando as outras equipes
+      //Chamando as equipes
       {path:'/equipes/mahindra', element:<Mahindra/>}
     ]
   }

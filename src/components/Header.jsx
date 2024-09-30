@@ -68,6 +68,7 @@ const Header = () => {
                 </div>
                 <ul className="dropdown__menu">
                   <li><Link to="/comparativos" className="dropdown__link">Comparativos</Link></li>
+                  <li><Link to="/projeto" className="dropdown__link">Projeto</Link></li>
                 </ul>
               </li>
 
@@ -79,7 +80,9 @@ const Header = () => {
                   Usuário <i className="ri-arrow-down-s-line dropdown__arrow"></i>
                 </div>
                 <ul className="dropdown__menu">
+                  <li><Link to="#" className="dropdown__link">Conta</Link></li>
                   <li><Link to="/login" className="dropdown__link">Login</Link></li>
+                  <li><Link to="/forum" className="dropdown__link">Forum</Link></li>
                 </ul>
               </li>
             </ul>
