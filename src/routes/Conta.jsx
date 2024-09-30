@@ -9,11 +9,9 @@ const MainConta = styled.main`
     background-color: var(--black-color-light);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 30px;
-    flex-grow: 1;
-    width: 97%;
-
-
+    margin: 30px auto; 
+    max-width: 1200px; 
+    width: 100%; 
     h2 {
         text-align: center;
         color: #333;
@@ -43,12 +41,12 @@ const MainConta = styled.main`
         }
     }
 
-    
     .preferencias {
         display: flex;
         align-items: center;
         margin-top: 10px;
-        justify-content: space-between; 
+        justify-content: space-between;
+
         img {
             max-width: 90px;
             margin-right: 10px;
@@ -67,30 +65,24 @@ const MainConta = styled.main`
             margin-left: 40px;
             font-size: 25px;
             border: 2px solid darkred;
-            
-            
 
             &:hover {
                 background-color: #ad3d3d;
             }
-        
-        
         }
     }
-
-    
 
     .bandeira {
         max-width: 20px;
         margin-left: 5px;
     }
 
-    span{
-        color:var(--black-color-light) ;
+    span {
+        color: var(--black-color-light);
         font-size: 20px;
     }
 
-    .card{
+    .card {
         background-color: #e94a4a;
         color: white;
         padding: 20px;
@@ -98,24 +90,89 @@ const MainConta = styled.main`
         text-align: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        width: 600px;
-        margin: 40px 0 0 35rem;  
+        max-width: 600px;
+        width: 100%; /* Faz o card ocupar a largura total disponível */
+        margin: 40px auto; /* Centraliza o card na tela */
     }
-    .card:hover{
+
+    .card:hover {
         transform: scale(1.05);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
 
-    .cardh1{
-        margin: 40px 0 0 48rem;
-    }
-    
-    .perfil{
-        margin: 4px 0 0 50rem;
-        padding-bottom: 25px;
-        
+    .cardh1 {
+        text-align: center;
+        margin: 40px 0;
     }
 
+    .perfil {
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    /* Responsividade para telas menores */
+    @media (max-width: 768px) {
+        .card {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .cardh1,
+        .perfil {
+            margin: 0;
+            text-align: center;
+        }
+
+        .preferencias {
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                margin: 20px 0 0 0;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 10px;
+
+        .team-info {
+            padding: 15px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .detail {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 5px 0;
+        }
+
+        span {
+            font-size: 18px;
+        }
+
+        .preferencias img {
+            max-width: 70px;
+        }
+
+        button {
+            font-size: 20px;
+            width: 45px;
+            height: 45px;
+        }
+
+        .card {
+            padding: 15px;
+        }
+
+        .cardh1 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
 `
 
 const Conta = () => {

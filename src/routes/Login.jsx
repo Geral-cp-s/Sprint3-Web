@@ -346,7 +346,7 @@ const Login = () => {
         else {
             sessionStorage.setItem("email", "email");
             sessionStorage.setItem("senha", "senha");
-            navigate("/pistas");
+            navigate("/conta");
         }
     }
 
@@ -412,7 +412,7 @@ const Login = () => {
                                 <img src="/img/Login/icons8-linkedin-50.png" className="social" />
                             </a>
                             <a href="https://www.google.com">
-                                <img src="public/img/Login/icons8-google-logo-50.png" className="social" />
+                                <img src="/img/Login/icons8-google-logo-50.png" className="social" />
                             </a>
                         </div>
                     </form>
@@ -439,7 +439,7 @@ const Login = () => {
                                 <img src="/img/Login/icons8-linkedin-50.png" className="social" />
                             </a>
                             <a href="https://www.google.com">
-                                <img src="public/img/Login/icons8-google-logo-50.png" className="social" />
+                                <img src="/img/Login/icons8-google-logo-50.png" className="social" />
                             </a>
                         </div>
                     </form>
