@@ -11,7 +11,7 @@ import Comparativos from './routes/Comparativos.jsx'
 import Equipes from './routes/Equipes.jsx'
 import Mahindra from './routes/Mahindra.jsx'
 import GlobalStyled from './global-styled.js'
-import Forum from './components/Forum.jsx'
+import Forum from './routes/Forum.jsx'
 import Projeto from  './routes/Projeto.jsx'
 import Conta from './routes/Conta.jsx'
 

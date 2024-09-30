@@ -108,6 +108,7 @@ const MainConta = styled.main`
     .perfil {
         text-align: center;
         padding-bottom: 25px;
+        margin-left: 45%;
     }
 
     /* Responsividade para telas menores */

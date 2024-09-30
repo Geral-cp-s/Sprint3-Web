@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom"
-import Card from './Card';
+import Card from '../components/Card';
 import styled from 'styled-components';
 
 const MainForum = styled.main`
@@ -71,7 +71,7 @@ const MainForum = styled.main`
 
 .forum .card {
     margin-top: 20px;
-    color: #fff;
+    color: white;
     padding: 20px;
     border: 1px solid white;
     gap: 15px;
