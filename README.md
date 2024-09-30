@@ -37,7 +37,7 @@
 </ul> 
 
 <h2 id="hospedagem">Hospedagem no GitHub Pages</h2>
-<p>A landing page está hospedada no GitHub Pages e pode ser acessada através do seguinte link: <a href="https://geral-cp-s.github.io/Sprint1-Web/">Fórmula E Interactive Website</a>.</p> 
+<p>AINDA NÃO ESTÁ DISPONIVEL</p> 
 
 <h2 id="final">Considerações Finais</h2> 
 <p>Obrigado pelo seu interesse no Site Interativo da Fórmula E! Esperamos que este projeto ajude você a aproveitar e apreciar o emocionante mundo das corridas de Fórmula E.</p>
