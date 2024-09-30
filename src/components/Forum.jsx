@@ -71,7 +71,7 @@ const MainForum = styled.main`
 
 .forum .card {
     margin-top: 20px;
-    color: #fff;
+    color: white;
     padding: 20px;
     border: 1px solid white;
     gap: 15px;
