@@ -40,6 +40,7 @@ const MainForum = styled.main`
     font-weight: bold;
     margin-bottom: 8px;
     color: #fff;
+    padding-bottom: 10px;
     
 }
 
@@ -73,6 +74,9 @@ const MainForum = styled.main`
     color: #fff;
     padding: 20px;
     border: 1px solid white;
+    gap: 15px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 
@@ -83,9 +87,6 @@ h1 {
     font-size: 40px;
     
 }
-
-
-
 
 `
 
