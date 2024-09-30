@@ -80,6 +80,7 @@ export const HeaderMenu = styled.nav`
     text-align: left;
     border-radius: 10px;
     z-index: 100; /* Garante que o dropdown esteja acima de outros elementos */
+    
 
     /* Removendo bolinhas do menu dropdown */
     .dropdown__list {
@@ -94,6 +95,7 @@ export const HeaderMenu = styled.nav`
       display: block;
       text-decoration: none;
       transition: background-color 0.3s ease;
+      text-decoration: none;
 
       &:hover {
         background-color: #444;

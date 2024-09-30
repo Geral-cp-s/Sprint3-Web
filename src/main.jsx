@@ -13,6 +13,7 @@ import Mahindra from './routes/Mahindra.jsx'
 import GlobalStyled from './global-styled.js'
 import Forum from './components/Forum.jsx'
 import Projeto from  './routes/Projeto.jsx'
+import Conta from './routes/Conta.jsx'
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       {path:'/projeto', element:<Projeto/>},
       {path:'/equipes', element:<Equipes/>},
       {path:'/forum', element:<Forum/>},
+      {path:'/conta', element:<Conta/>},
 
 
 

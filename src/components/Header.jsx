@@ -80,7 +80,7 @@ const Header = () => {
                   Usuário <i className="ri-arrow-down-s-line dropdown__arrow"></i>
                 </div>
                 <ul className="dropdown__menu">
-                  <li><Link to="#" className="dropdown__link">Conta</Link></li>
+                  <li><Link to="/conta" className="dropdown__link">Conta</Link></li>
                   <li><Link to="/login" className="dropdown__link">Login</Link></li>
                   <li><Link to="/forum" className="dropdown__link">Forum</Link></li>
                 </ul>
