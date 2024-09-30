@@ -206,8 +206,8 @@ const Conta = () => {
                     <h2>Pilotos favoritos</h2>
                     <div className="preferencias">
                         <div>
-                            <img className="ig-piloto" src="./img/mahindra/ig-edoardo.PNG" alt="Edoardo"/>
-                                <img className="ig-piloto" src="./img/mahindra/ig-nyck.PNG" alt="Nyck"/>
+                            <img className="ig-piloto" src="./img/mahindra/ig-edoardo.png" alt="Edoardo"/>
+                                <img className="ig-piloto" src="./img/mahindra/ig-nyck.png" alt="Nyck"/>
                                     <button>+</button>
                                 </div>
                         </div>
