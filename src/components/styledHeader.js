@@ -10,51 +10,79 @@ export const HeaderMenu = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
 
   /* Logo */
   .nav__logo img {
-    height: 80px; /* Mantenha a altura do cabeçalho */
-    transform: scale(1.2); /* Aumente a escala do logo (ajuste conforme necessário) */
-    transition: transform 0.3s ease; /* Adicione uma transição suave para o efeito de hover */
     height: 80px;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
   }
 
   .nav__logo img:hover {
-    transform: scale(1.25); /* Aumenta a escala ao passar o mouse */
+    transform: scale(1.25);
   }
 
   /* Toggle para mobile */
   .nav__toggle {
-    display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    position: absolute;
+    right: 2rem; /* Move o ícone para o lado direito */
+    top: 0.5rem; /* Ajuste para mover o ícone para cima */
+  }
+
+  .nav__close {
+    display: none;
+  }
+
+  /* Estilo quando o menu está aberto */
+  .show-icon .ri-menu-line {
+    display: none;
+  }
+
+  .show-icon .ri-close-line {
+    display: inline-block;
   }
 
   /* Menu Principal */
   .nav__menu {
+    display: none;
+  }
+
+  .show-menu {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--black-color-light); /* Definindo a cor de fundo do menu */
+    padding: 1rem 2rem;
+    width: 100%;
+    z-index: 10;
   }
 
   .nav__list {
     display: flex;
-    align-items: center;
-    list-style: none; /* Remove as bolinhas do menu principal */
+    align-items: flex-end;
+    list-style: none;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .nav__link {
     color: #fff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease, transform 0.2s ease; 
-    text-align: left;
+    padding: 1rem;
     font-size: 20px;
+    transition: color 0.3s ease, transform 0.2s ease;
 
     &:hover {
-      color: #00aaff; /* Mudando a cor do texto ao passar o mouse */
+      color: #00aaff;
       transform: translateY(-2px);
-      text-decoration: underline; /* Adiciona underline ao passar o mouse */
+      text-decoration: underline;
     }
   }
 
@@ -62,82 +90,58 @@ export const HeaderMenu = styled.nav`
   .dropdown__item {
     position: relative;
 
-    /* Permitir que o dropdown apareça ao passar o mouse */
     &:hover .dropdown__menu {
-      display: block; /* Mostra o menu quando o mouse está sobre o item */
+      display: block;
     }
   }
 
   .dropdown__menu {
-    display: none; /* Mude para none para esconder por padrão */
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--black-color-light);
+    background-color: var(--black-color-light); /* Mantendo a mesma cor para o dropdown */
     padding: 1rem 0;
     min-width: 180px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     border-radius: 10px;
-    z-index: 100; /* Garante que o dropdown esteja acima de outros elementos */
-    
-
-    /* Removendo bolinhas do menu dropdown */
-    .dropdown__list {
-      list-style: none; /* Remove as bolinhas do dropdown */
-      padding: 0; /* Remove o padding padrão */
-      margin: 0; /* Remove a margem padrão */
-    }
+    z-index: 100;
 
     .dropdown__link {
       color: #fff;
       padding: 0.5rem 1.5rem;
       display: block;
       text-decoration: none;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
 
       &:hover {
         background-color: #444;
-        color: #00aaff; /* Mudando a cor do texto ao passar o mouse */
-        text-decoration: underline; /* Adiciona underline ao passar o mouse */
+        color: #00aaff;
+        text-decoration: underline;
       }
     }
   }
 
-  /* Ícone de seta do dropdown */
   .dropdown__arrow {
     margin-left: 0.5rem;
     font-size: 1rem;
     transition: transform 0.4s;
   }
 
-  /* Mobile */
+  /* Estilos para mobile */
   @media (max-width: 768px) {
-    .nav__toggle {
-      display: block;
-    }
-
     .nav__menu {
       display: none;
-      flex-direction: column;
-      gap: 1rem;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: #222;
-      padding: 1rem 2rem;
-      width: 100%;
-      z-index: 10; /* Adicionando z-index para sobrepor outros elementos */
     }
 
-    .nav__menu.show-menu {
+    .show-menu {
       display: flex;
+      background-color: var(--black-color-light); /* Cor de fundo no menu toggle para mobile */
     }
 
     .nav__list {
       flex-direction: column;
-      list-style: none; /* Remove as bolinhas do menu principal no mobile */
+      align-items: flex-end;
     }
 
     .nav__link {
@@ -147,11 +151,11 @@ export const HeaderMenu = styled.nav`
     .dropdown__menu {
       position: relative;
       box-shadow: none;
-      /* display: none; Oculto por padrão */
     }
 
-    .dropdown__item:hover .dropdown__menu {
-      display: block; /* Mostrar no hover */
+    .nav__toggle {
+      right: 1.5rem;
+      top: 0.5rem; /* Ajuste para mover o ícone para cima no mobile */
     }
   }
 `;
