@@ -14,9 +14,9 @@ import flagJed from '../../public/img/bandeira/arabia.png';
 import pistaJed from '../../public/img/pistas/jeddah.jpg';
 import circuitoJed from '../../public/img/circuito/jeddah.jpg';
 
-// import flagMex from '../../public/img/bandeira/mex.png';
+//import flagMex from '../../public/img/bandeira/mex.png';
 import pistaTbc from '../../public/img/atention.png';
-// import circuitoMex from '../../public/img/circuito/mex.png';
+//import circuitoMex from '../../public/img/circuito/mex.png';
 
 import flagMia from '../../public/img/bandeira/eua.png';
 import pistaMia from '../../public/img/pistas/miami.jpg';
