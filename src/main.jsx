@@ -34,8 +34,6 @@ const router = createBrowserRouter([
       {path:'/forum', element:<Forum/>},
       {path:'/conta', element:<Conta/>},
 
-
-
       //Chamando as equipes
       {path:'/equipes/mahindra', element:<Mahindra/>}
     ]
