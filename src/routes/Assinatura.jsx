@@ -20,6 +20,8 @@ const MainAssinatura = styled.main`
         background-color: #fff;
         color: #697e91;
         max-width: 300px;
+        margin-bottom: 10rem;
+        margin-top: 10rem;
 
         
     }
@@ -134,6 +136,7 @@ const MainAssinatura = styled.main`
 const Assinatura = () => {
     return (
         <MainAssinatura>
+            
             <div className="container">
 
                 <div class="plan">
