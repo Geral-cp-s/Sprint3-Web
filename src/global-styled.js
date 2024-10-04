@@ -52,12 +52,7 @@ body {
   background-color: var(--body-color);
 }
 
-.cont {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  box-sizing: border-box;
-}
+
 #root{
       min-height: 100dvh;
       display:flex ;

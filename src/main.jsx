@@ -36,8 +36,6 @@ const router = createBrowserRouter([
       {path:'/conta', element:<Conta/>},
       {path:'/assinatura', element:<Assinatura/>},
 
-
-
       //Chamando as equipes
       {path:'/equipes/mahindra', element:<Mahindra/>}
     ]

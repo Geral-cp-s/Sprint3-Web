@@ -1,11 +1,10 @@
-// src/components/Header.js
-
 import { useEffect } from 'react';
 import { HeaderMenu } from './styledHeader';
-import { Link } from 'react-router-dom';
-
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const location = useLocation(); // Hook para pegar a localização atual
+
   useEffect(() => {
     const toggleMenu = () => {
       const nav = document.getElementById('nav-menu');
@@ -18,10 +17,21 @@ const Header = () => {
     const toggle = document.getElementById('nav-toggle');
     toggle.addEventListener('click', toggleMenu);
 
+    // Fecha o menu ao trocar de página
+    const closeMenu = () => {
+      const nav = document.getElementById('nav-menu');
+      const toggle = document.getElementById('nav-toggle');
+
+      nav.classList.remove('show-menu');
+      toggle.classList.remove('show-icon');
+    };
+
+    closeMenu(); // Fecha o menu no início, se necessário
+
     return () => {
       toggle.removeEventListener('click', toggleMenu);
     };
-  }, []);
+  }, [location]); // Adiciona 'location' como dependência para o efeito
 
   return (
     <HeaderMenu>
@@ -32,23 +42,17 @@ const Header = () => {
               <img src="/img/G4_Tech-branco.png" alt="Logo" />
             </Link>
 
-            {/* Botão de Toggle do Menu */}
-
-            {/* alterar aqui!!! */}
             <div className="nav__toggle" id="nav-toggle">
-              {/* <button>teste</button> */}
               <i className="ri-menu-line nav__burger"></i>
               <i className="ri-close-line nav__close"></i>
             </div>
           </div>
 
-          {/* NAV MENU */}
           <div className={`nav__menu`} id="nav-menu">
             <ul className="nav__list">
               <li><Link to="/" className="nav__link">Home</Link></li>
               <li><Link to="/quem-somos" className="nav__link">Quem somos</Link></li>
 
-              {/* MENU SUSPENSO 1 */}
               <li className="dropdown__item">
                 <div className="nav__link">
                   Equipes <i className="ri-arrow-down-s-line dropdown__arrow"></i>
@@ -61,10 +65,9 @@ const Header = () => {
                 </ul>
               </li>
 
-              {/* MENU SUSPENSO 2 */}
               <li className="dropdown__item">
                 <div className="nav__link">
-                  Fórmula-E<i className="ri-arrow-down-s-line dropdown__arrow"></i>
+                  Fórmula-E <i className="ri-arrow-down-s-line dropdown__arrow"></i>
                 </div>
                 <ul className="dropdown__menu">
                   <li><Link to="/comparativos" className="dropdown__link">Comparativos</Link></li>
@@ -74,7 +77,6 @@ const Header = () => {
 
               <li><Link to="/pistas" className="nav__link">Pistas</Link></li>
 
-              {/* MENU SUSPENSO 3 */}
               <li className="dropdown__item">
                 <div className="nav__link">
                   Usuário <i className="ri-arrow-down-s-line dropdown__arrow"></i>
