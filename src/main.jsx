@@ -14,6 +14,7 @@ import GlobalStyled from './global-styled.js'
 import Forum from './routes/Forum.jsx'
 import Projeto from  './routes/Projeto.jsx'
 import Conta from './routes/Conta.jsx'
+import Assinatura from './routes/Assinatura.jsx'
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       {path:'/equipes', element:<Equipes/>},
       {path:'/forum', element:<Forum/>},
       {path:'/conta', element:<Conta/>},
+      {path:'/assinatura', element:<Assinatura/>},
 
 
 
