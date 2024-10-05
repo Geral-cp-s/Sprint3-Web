@@ -52,7 +52,7 @@ export const HeaderMenu = styled.nav`
     font-size: 20px;
 
     &:hover {
-      color: #00aaff; /* Mudando a cor do texto ao passar o mouse */
+      color: rgba(233, 41, 41, 0.938); /* Mudando a cor do texto ao passar o mouse */
       transform: translateY(-2px);
       text-decoration: underline; /* Adiciona underline ao passar o mouse */
     }

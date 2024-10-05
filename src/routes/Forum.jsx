@@ -20,6 +20,7 @@ const MainForum = styled.main`
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-grow: 0;
+    border: 6px solid rgba(233, 41, 41, 0.5);
 }
 
 #comentario {

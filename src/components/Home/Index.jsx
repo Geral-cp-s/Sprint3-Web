@@ -4,7 +4,7 @@ import videoSrc from '../../../public/video.mp4'; // Verifique se o caminho est�
 // Estilização da Seção que conterá o vídeo de fundo
 const Section = styled.section`
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;

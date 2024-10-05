@@ -3,13 +3,22 @@ import styled from "styled-components"
 const MainAssinatura = styled.main`
     
     display: flex;
+    flex-direction: column; 
+    align-items: center; 
     flex-grow: 1;
-    
 
-    .container{
+    h1 {
+        margin: 2rem 0; 
+        text-align: center; 
+        width: 100%; 
+        max-width: 800px;
+        margin-top: 55px;
+    }
+
+    .container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start; /* Ajusta alinhamento das divs */
         max-width: 1260px;
         padding: 2rem 0;
     }
@@ -21,10 +30,9 @@ const MainAssinatura = styled.main`
         color: #697e91;
         max-width: 300px;
         margin-bottom: 10rem;
-        margin-top: 10rem;
-
-        
+        margin-top: 5rem;
     }
+
 
 
     .plan .inner {
@@ -40,7 +48,7 @@ const MainAssinatura = styled.main`
         position: absolute;
         top: 0;
         right: 0;
-        background-color: rgba(233, 41, 41, 0.384);;
+        background-color: rgba(233, 41, 41, 0.384);
         border-radius: 99em 0 0 99em;
         display: flex;
         align-items: center;
@@ -86,7 +94,7 @@ const MainAssinatura = styled.main`
     }
 
     .plan .features .icon {
-        background-color: rgba(233, 41, 41, 0.938);;
+        background-color: rgba(233, 41, 41, 0.938);
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -136,9 +144,9 @@ const MainAssinatura = styled.main`
 const Assinatura = () => {
     return (
         <MainAssinatura>
+            <h1> Planos de Assinatura</h1>
             
             <div className="container">
-
                 <div class="plan">
                     <div class="inner">
                         <span class="pricing">

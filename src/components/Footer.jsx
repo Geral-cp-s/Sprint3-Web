@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 const Footer = () => {
     return(
         <FooterGeral>
-            <h5>&copy; 2024 G4Tech. Todos os direitos reservados.</h5>
+            <h5>&copy; 2024 G4Tech | Todos os direitos reservados.</h5>
             <nav>
                 <ul>
                     <li><strong>Geral</strong></li>
