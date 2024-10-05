@@ -98,8 +98,7 @@ export const HeaderMenu = styled.nav`
       text-decoration: none;
 
       &:hover {
-        background-color: #444;
-        color: #00aaff; /* Mudando a cor do texto ao passar o mouse */
+        background-color:rgba(233, 41, 41, 0.938);
         text-decoration: underline; /* Adiciona underline ao passar o mouse */
       }
     }
