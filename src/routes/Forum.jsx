@@ -76,9 +76,15 @@ const MainForum = styled.main`
     background-color: rgba(0, 0, 0, 0.1);
     padding: 20px;
     border: 1px solid white;
-    gap: 15px;
+    gap: 10px;
     display: flex;
     flex-direction: column-reverse;
+    img{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
 
 

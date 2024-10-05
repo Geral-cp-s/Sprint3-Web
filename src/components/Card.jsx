@@ -23,9 +23,10 @@ useEffect(()=>{
         <div>
             {forum.map((item,index)=>(
                 <div className='card' key={index}>
-                    <p>nome: {item.nome}</p>
-                    <p>email: {item.email}</p>
-                    <p>descricao: {item.descricao}</p>
+                    <p>Nome: {item.nome}</p>
+                    <p>Email: {item.email}</p>
+                    <p>Comentario: {item.descricao}</p>
+                    <img src="/img/9055969781537356155-128.png" alt="" />
                 </div>
             ))}
         </div>
