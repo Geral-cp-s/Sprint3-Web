@@ -18,21 +18,24 @@ export const Bandeira = styled.img`
 `;
 
 // Novo contêiner para a imagem do carro
-export const CarContainer = styled.div`
+export const CarImage = styled.img`
+  background-color: white;
   background: white; /* Fundo branco */
-  padding: 20px; /* Espaçamento interno */
+  padding: 50px; /* Espaçamento interno */
   border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
   text-align: center; /* Centraliza o conteúdo */
-  margin: 20px auto; /* Margem automática para centralização */
-`;
-
-export const CarImage = styled.img`
+  margin: 60px auto; /* Margem automática para centralização */
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   display: block;
-  margin: 0 auto; /* Remove a margem superior e inferior */
-`;
+
+  
+    &:hover {
+      transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+      box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.5); /* Cor de fundo ao passar o mouse */
+        } 
+  `;
 
 export const ModalContainer = styled.div`
   display: flex; /* Altera para flex para centralizar o conteúdo */

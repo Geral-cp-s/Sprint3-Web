@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CarImage } from './styledMahindra'; // Suponho que esteja usando esses componentes estilizados
+import { CarImage } from './styledMahindra';
 
 function Car() {
   const [isModalOpen, setIsModalOpen] = useState(false);
