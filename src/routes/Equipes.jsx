@@ -11,6 +11,8 @@ const PageTitle = styled.h1`
     text-transform: uppercase; /* Transformação do texto para maiúsculas */
     letter-spacing: 1px; /* Espaçamento entre as letras */
     text-decoration: underline; /* Adiciona sublinhado */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+    font-family: orbitron;
     text-decoration-color: red; /* Cor do sublinhado */
 `;
 

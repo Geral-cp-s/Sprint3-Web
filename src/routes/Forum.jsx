@@ -11,6 +11,7 @@ const MainForum = styled.main`
     gap: 20px;               
     flex-wrap: wrap;       
     margin: 30px;
+    
 }
 
 .forum {
@@ -40,7 +41,7 @@ const MainForum = styled.main`
 .forum label {
     font-weight: bold;
     margin-bottom: 8px;
-    color: #fff;
+    color: #ffffffd1;
     padding-bottom: 10px;
     
 }
@@ -78,12 +79,13 @@ const MainForum = styled.main`
     border: 1px solid white;
     gap: 10px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     img{
         width: 40px;
         height: 40px;
         margin-top: 10px;
         margin-bottom: 20px;
+        
     }
 }
 
@@ -93,6 +95,8 @@ h1 {
     margin: 20px;
     text-align: center;
     font-size: 40px;
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+    font-family: orbitron;
     
 }
 

@@ -13,6 +13,9 @@ const MainAssinatura = styled.main`
         width: 100%; 
         max-width: 800px;
         margin-top: 55px;
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+        font-family: roboto;
+        font-size: 50px;
     }
 
     .container {
@@ -31,6 +34,10 @@ const MainAssinatura = styled.main`
         max-width: 300px;
         margin-bottom: 10rem;
         margin-top: 5rem;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+            &:hover {
+                transform: translateY(-25px); /* Efeito de elevação ao passar o mouse */
+        }  
     }
 
 
@@ -55,11 +62,11 @@ const MainAssinatura = styled.main`
         padding: 0.625em 0.75em;
         font-size: 1.25rem;
         font-weight: 600;
-        color: #425475;
+        color: #ffffff;
     }
 
     .plan .pricing small {
-        color: #707a91;
+        color: #ffffff;
         font-size: 0.75em;
         margin-left: 0.25em;
     }
@@ -137,6 +144,31 @@ const MainAssinatura = styled.main`
     .plan .button:hover, .plan .button:focus {
         background-color: rgba(233, 41, 41, 0.5);;
     }
+    
+    #bronze{
+        border: 5px solid rgb(205, 127, 50);
+        padding: 11px;
+    }
+    #ouro{
+        border: 5px solid rgb(255, 215, 0);
+        padding: 15px;
+    }
+
+    #prata{
+        border: 5px solid rgb(192, 192, 192);
+    }
+
+    #bronzep{
+        background-color:rgb(180, 116, 52) ;
+    }
+    #ourop{
+        background-color:rgb(231, 199, 14) ;
+    }
+
+    #pratap{
+        background-color: rgb(163, 163, 163);
+    }
+
 
 
 `
@@ -147,9 +179,9 @@ const Assinatura = () => {
             <h1> Planos de Assinatura</h1>
             
             <div className="container">
-                <div class="plan">
+                <div class="plan" id="bronze">
                     <div class="inner">
-                        <span class="pricing">
+                        <span class="pricing" id="bronzep">
                             <span>
                                 R$49 <small>/ m</small>
                             </span>
@@ -193,9 +225,9 @@ const Assinatura = () => {
                     </div>
                 </div>
 
-                <div class="plan">
+                <div class="plan" id="prata">
                     <div class="inner">
-                        <span class="pricing">
+                        <span class="pricing" id="pratap">
                             <span>
                                 R$69 <small>/ m</small>
                             </span>
@@ -239,9 +271,9 @@ const Assinatura = () => {
                     </div>
                 </div>
 
-                <div class="plan">
+                <div class="plan" id="ouro">
                     <div class="inner">
-                        <span class="pricing">
+                        <span class="pricing" id="ourop">
                             <span>
                                 R$89 <small>/ m</small>
                             </span>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const HeaderMenu = styled.nav`
   /* Container Geral */
   background-color: var(--black-color-light);
@@ -14,10 +15,10 @@ export const HeaderMenu = styled.nav`
 
   /* Logo */
   .nav__logo img {
-    height: 80px; /* Mantenha a altura do cabeçalho */
+    height: 90px; /* Mantenha a altura do cabeçalho */
     transform: scale(1.2); /* Aumente a escala do logo (ajuste conforme necessário) */
     transition: transform 0.3s ease; /* Adicione uma transição suave para o efeito de hover */
-    height: 80px;
+
   }
 
   .nav__logo img:hover {
@@ -49,7 +50,10 @@ export const HeaderMenu = styled.nav`
     padding: 0.5rem 1rem;
     transition: color 0.3s ease, transform 0.2s ease; 
     text-align: left;
-    font-size: 20px;
+    font-size: 28px;
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+    font-family: orbitron;
+
 
     &:hover {
       color: rgba(233, 41, 41, 0.938); /* Mudando a cor do texto ao passar o mouse */
@@ -80,7 +84,9 @@ export const HeaderMenu = styled.nav`
     text-align: left;
     border-radius: 10px;
     z-index: 100; /* Garante que o dropdown esteja acima de outros elementos */
-    
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+    font-family: orbitron;
+    font-size: 20px;
 
     /* Removendo bolinhas do menu dropdown */
     .dropdown__list {

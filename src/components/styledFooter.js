@@ -17,6 +17,9 @@ export const FooterGeral = styled.footer`
         width: 100%;
         max-width: 1200px;
         margin: 20px 0;
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        font-family: orbitron;
+
     }
 
     nav ul {

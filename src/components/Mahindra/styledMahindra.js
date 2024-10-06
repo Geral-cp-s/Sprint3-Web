@@ -6,6 +6,7 @@ export const TeamInfoContainer = styled.div`
   padding: 20px;
   text-align: center;
   margin-top: 6%;
+  
 `;
 
 export const Logo = styled.img`
@@ -70,6 +71,7 @@ export const ModalContent = styled.div`
     margin: 0; /* Remove margem padrão */
     font-size: 20px; /* Tamanho da fonte do título */
     color: #333; /* Cor do texto */
+    
   }
 
   /* Estilos para conteúdo do modal */
@@ -77,6 +79,7 @@ export const ModalContent = styled.div`
     margin: 15px 0 0; /* Espaçamento entre parágrafos */
     color: #666; /* Cor do texto */
     line-height: 1.5; /* Espaçamento entre linhas */
+    
   }
 
   /* Estilos para botão de fechamento */
@@ -174,6 +177,7 @@ export const DriverCard = styled.div`
     font-size: 18px; /* Tamanho da fonte do nome do piloto */
     color: #333; /* Cor do texto */
     margin-bottom: 10px; /* Espaçamento inferior */
+    
   }
 
   p {
@@ -181,6 +185,7 @@ export const DriverCard = styled.div`
     color: #666; /* Cor do texto para descrição */
     line-height: 1.5; /* Espaçamento entre linhas */
     margin: 0; /* Remove margens padrão */
+    
   }
 
   /* Adicionando um efeito de contorno gradual */
@@ -226,6 +231,7 @@ export const QuemEContainer = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+
 
   &:hover {
     transform: translateY(-2px);
