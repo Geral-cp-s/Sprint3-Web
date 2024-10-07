@@ -15,11 +15,11 @@ const SideBar = () => {
         </DropdownHeader>
         {produtosOpen && (
           <DropdownList>
-            <li>Camisetas</li>
-            <li>Casacos e Jaquetas</li>
-            <li>Bonés</li>
-            <li>Acessórios</li>
-            <li>Todos os produtos</li>
+            <li><a href="#">Camisetas</a></li>
+            <li><a href="#">Casacos e Jaquetas</a></li>
+            <li><a href="#">Bonés</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Todos os produtos</a></li>
           </DropdownList>
         )}
       </Dropdown>
@@ -31,22 +31,22 @@ const SideBar = () => {
         </DropdownHeader>
         {equipesOpen && (
           <DropdownList>
-            <li>Mahindra</li>
-            <li>Tag Heuer Porsche</li>
-            <li>Neom McLaren</li>
-            <li>ABT Cupra</li>
-            <li>Andretti</li>
-            <li>DS Penske</li>
-            <li>Envision Racing</li>
-            <li>ERT Formula e</li>
-            <li>Jaguar TCS Racing</li>
-            <li>Maserati MSG Racing</li>
-            <li>Nissan</li>
+            <li><a href="#">Mahindra</a></li>
+            <li><a href="#">Tag Heuer Porsche</a></li>
+            <li><a href="#">Neom McLaren</a></li>
+            <li><a href="#">ABT Cupra</a></li>
+            <li><a href="#">Andretti</a></li>
+            <li><a href="#">DS Penske</a></li>
+            <li><a href="#">Envision Racing</a></li>
+            <li><a href="#">ERT Formula e</a></li>
+            <li><a href="#">Jaguar TCS Racing</a></li>
+            <li><a href="#">Maserati MSG Racing</a></li>
+            <li><a href="#">Nissan</a></li>
           </DropdownList>
         )}
       </Dropdown>
 
-      <OffersTitle>Ofertas</OffersTitle> {/* Estiliza o título "Ofertas" */}
+      <OffersTitle><a href="#">Ofertas</a></OffersTitle> {/* Estiliza o título "Ofertas" */}
     </SidebarContainer>
   );
 };
