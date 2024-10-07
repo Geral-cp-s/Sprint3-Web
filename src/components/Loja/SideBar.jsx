@@ -94,12 +94,14 @@ const DropdownList = styled.ul`
 
   li {
     margin-bottom: 8px;
+    color: white;
+    background-color: #4169E1;
     cursor: pointer;
     padding: 5px; /* Padding para as opções da lista */
     border-radius: 4px; /* Arredondamento dos cantos */
 
     &:hover {
-      background-color: #f0f0f0; /* Cor ao passar o mouse */
+      background-color: #5A8EEB; /* Cor ao passar o mouse */
     }
   }
 `;
