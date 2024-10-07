@@ -113,11 +113,10 @@ export default function Index() {
         {/* Vídeo de Fundo */}
         <BackgroundVideo autoPlay muted loop>
           <source src={videoSrc} type="video/mp4" />
-          Seu navegador não suporta o elemento de vídeo.
         </BackgroundVideo>
 
         {/* Texto Centralizado */}
-        <Text>Texto Sobre o Vídeo</Text>
+        <Text><a href="/loja" target='_blank'>Acesse nossa loja</a></Text>
       </Section>
       <CardContainer>
         {/* CARD 1 */}
