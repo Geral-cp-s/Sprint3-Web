@@ -94,6 +94,7 @@ const DropdownList = styled.ul`
 
   li {
     margin-bottom: 8px;
+    background-color: #f0f0f0;
     cursor: pointer;
     padding: 5px; /* Padding para as opções da lista */
     border-radius: 4px; /* Arredondamento dos cantos */

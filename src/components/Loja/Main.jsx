@@ -6,15 +6,15 @@ const MainContent = () => {
   const [currentSlide, setCurrentSlide] = useState(1); // Começar no primeiro "produto" real
 
   const products = [
-    { id: 1, img: '../../../public/img/produtos/bone.webp', name: 'Boné New Era Repreve 9FORTY', price: 'R$160,00' },
-    { id: 2, img: '../../../public/img/produtos/mochila.jpg', name: 'Mochila Dobrável', price: 'R$250,00' },
-    { id: 3, img: '../../../public/img/produtos/garrafa.webp', name: 'Garrafa de Água Gradiente', price: 'R$50,00' },
-    { id: 4, img: '../../../public/img/produtos/camiseta.jpg', name: 'Camiseta Oficial Fórmula E', price: 'R$180,00' },
-    { id: 5, img: '../../../public/img/produtos/jaqueta.jpg', name: 'Jaqueta Impermeável', price: 'R$400,00' },
-    { id: 6, img: '../../../public/img/produtos/gymsack.jpg', name: 'Pull Bag Camuflada', price: 'R$60,00' },
-    { id: 7, img: '../../../public/img/produtos/chaveiro.jpg', name: 'Chaveiro Oficial', price: 'R$30,00' },
-    { id: 8, img: '../../../public/img/produtos/tokyo.jpg', name: 'Camiseta E-Prix de Tóquio', price: 'R$110,00' },
-    { id: 9, img: '../../../public/img/produtos/moletbranco.jpg', name: 'Moletom Gradiente', price: 'R$230,00' }
+    { id: 1, img: '../../../img/produtos/bone.webp', name: 'Boné New Era Repreve 9FORTY', price: 'R$160,00' },
+    { id: 2, img: '../../../img/produtos/mochila.jpg', name: 'Mochila Dobrável', price: 'R$250,00' },
+    { id: 3, img: '../../../img/produtos/garrafa.webp', name: 'Garrafa de Água Gradiente', price: 'R$50,00' },
+    { id: 4, img: '../../../img/produtos/camiseta.jpg', name: 'Camiseta Oficial Fórmula E', price: 'R$180,00' },
+    { id: 5, img: '../../../img/produtos/jaqueta.jpg', name: 'Jaqueta Impermeável', price: 'R$400,00' },
+    { id: 6, img: '../../../img/produtos/gymsack.jpg', name: 'Pull Bag Camuflada', price: 'R$60,00' },
+    { id: 7, img: '../../../img/produtos/chaveiro.jpg', name: 'Chaveiro Oficial', price: 'R$30,00' },
+    { id: 8, img: '../../../img/produtos/tokyo.jpg', name: 'Camiseta E-Prix de Tóquio', price: 'R$110,00' },
+    { id: 9, img: '../../../img/produtos/moletbranco.jpg', name: 'Moletom Gradiente', price: 'R$230,00' }
   ];
 
   const itemsPerSlide = 3; // Exibir 3 produtos por vez
@@ -110,14 +110,14 @@ const BannerContent = styled.div`
 `;
 
 const BannerImage = styled.img`
-  width: 300px; /* Ajuste a largura conforme necessário */
+  width: 400px; /* Ajuste a largura conforme necessário */
   height: auto;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 `;
 
 const Button = styled.button`
-  background-color: #ff6600;
+  background-color: blue;
   color: white;
   padding: 10px 20px; /* Ajuste o padding conforme necessário */
   font-size: 16px; /* Tamanho ajustado */
@@ -127,7 +127,7 @@ const Button = styled.button`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #e65c00;
+    background-color: #0000ff47;
   }
 `;
 
@@ -141,7 +141,7 @@ const CarouselContainer = styled.div`
 `;
 
 const Arrow = styled.div`
-  font-size: 30px; /* Tamanho ajustado */
+  font-size: 45px; /* Tamanho ajustado */
   cursor: pointer;
   user-select: none;
   color: #0077ff;
@@ -181,7 +181,7 @@ const ProductCard = styled.div`
 `;
 
 const ProductImage = styled.img`
-  width: 80%; /* Ajuste a largura da imagem conforme necessário */
+  width: 100%; /* Ajuste a largura da imagem conforme necessário */
   height: auto;
   max-width: 150px; /* Ajuste a largura máxima conforme necessário */
   margin: 0 auto; /* Centraliza a imagem no card */
