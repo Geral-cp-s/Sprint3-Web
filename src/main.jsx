@@ -15,6 +15,7 @@ import Forum from './routes/Forum.jsx'
 import Projeto from  './routes/Projeto.jsx'
 import Conta from './routes/Conta.jsx'
 import Assinatura from './routes/Assinatura.jsx'
+import Loja from './routes/Loja.jsx'
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
       {path:'/forum', element:<Forum/>},
       {path:'/conta', element:<Conta/>},
       {path:'/assinatura', element:<Assinatura/>},
+      {path:'/loja', element:<Loja/>},
 
       //Chamando as equipes
       {path:'/equipes/mahindra', element:<Mahindra/>}
