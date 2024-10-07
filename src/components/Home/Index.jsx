@@ -51,6 +51,7 @@ const CardContainer = styled.div`
 
 // Estilização de cada Card
 const Card = styled.div`
+  font-family: "Roboto", system-ui;
   width: 400px;
   max-width: 100%;
   padding: 30px;

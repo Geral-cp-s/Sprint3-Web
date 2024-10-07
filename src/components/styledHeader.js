@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const HeaderMenu = styled.nav`
   /* Container Geral */
+  font-family: "Audiowide", sans-serif;
   background-color: var(--black-color-light);
   padding: 1rem 2rem;
   color: #fff;
@@ -51,8 +52,7 @@ export const HeaderMenu = styled.nav`
     transition: color 0.3s ease, transform 0.2s ease; 
     text-align: left;
     font-size: 28px;
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-    font-family: orbitron;
+  }
 
 
     &:hover {
@@ -84,8 +84,7 @@ export const HeaderMenu = styled.nav`
     text-align: left;
     border-radius: 10px;
     z-index: 100; /* Garante que o dropdown esteja acima de outros elementos */
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-    font-family: orbitron;
+    font-family: "Roboto", system-ui;
     font-size: 20px;
 
     /* Removendo bolinhas do menu dropdown */
