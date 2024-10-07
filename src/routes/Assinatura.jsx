@@ -155,7 +155,7 @@ const MainAssinatura = styled.main`
     }
 
     #prata{
-        border: 5px solid rgb(192, 192, 192);
+        border: 5px solid #888;
     }
 
     #bronzep{

@@ -6,7 +6,7 @@ export const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-    background-color: #f8f9fa; /* Fundo suave */
+    background-color: lightgray; /* Fundo suave */
     min-height: 100vh; /* Garante que a altura mínima cubra a tela */
 `;
 

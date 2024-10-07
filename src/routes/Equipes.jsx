@@ -16,13 +16,18 @@ const PageTitle = styled.h1`
     text-decoration-color: red; /* Cor do sublinhado */
 `;
 
+const MainTitle = styled.h1`
+  background-color: lightgray;
+
+`
+
 
 const Equipes = () => {
   return (
-    <>
+    <MainTitle>
       <PageTitle>Equipes da Formula E</PageTitle>
       <Cards /> {/* Renderizando os cards */}
-    </>
+    </MainTitle>
   );
 };
 
