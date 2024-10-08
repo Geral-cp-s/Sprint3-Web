@@ -17,7 +17,7 @@ function Car() {
 
   return (
     <>
-      <CarImage src="../../../public/img/mahindra/carro.png" alt="Mahindra Car" onClick={openModal} />
+      <CarImage src="../../../img/mahindra/carro.png" alt="Mahindra Car" onClick={openModal} />
       
       {/* Modal */}
       {isModalOpen && (

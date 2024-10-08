@@ -201,7 +201,7 @@ const MainLogin = styled.main`
         transform: translate(-100%);
     }
     .overlay{
-        background-image: url(public/img/Login/pexels-alexwolfmx-14401647.jpg); /* Caminho para a imagem */
+        background-image: url(/img/Login/pexels-alexwolfmx-14401647.jpg); /* Caminho para a imagem */
         background-repeat: no-repeat;
         background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área */
         background-position: center; 

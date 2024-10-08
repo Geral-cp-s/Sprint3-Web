@@ -16,11 +16,11 @@ function DeVries() {
   return (
     <>
       <DriverCard onClick={openModal}>
-        <DriverImage src="../../../public/img/mahindra/nyckdevries.png" alt="Nick de Vries" />
+        <DriverImage src="../../../img/mahindra/nyckdevries.png" alt="Nick de Vries" />
         <DriverName>Nick de Vries</DriverName>
         <DriverNumber>21</DriverNumber>
         <p>
-          <CountryFlag src="../../../public/img/bandeira/holanda.jpg" alt="Bandeira da Holanda" />
+          <CountryFlag src="../../../img/bandeira/holanda.jpg" alt="Bandeira da Holanda" />
           Holanda
         </p>
       </DriverCard>
@@ -33,7 +33,7 @@ function DeVries() {
               &times;
             </span>
             <h2 style={modalTitleStyles}>Nick de Vries</h2>
-            <img src="../../../public/img/mahindra/nyckdevries.png" alt="Nick de Vries" style={modalImageStyles} />
+            <img src="../../../img/mahindra/nyckdevries.png" alt="Nick de Vries" style={modalImageStyles} />
             <h3 style={legendaStyles}>Estatísticas da temporada</h3>
             <div style={statsContainerStyles}>
               <div style={statItemStyles}>

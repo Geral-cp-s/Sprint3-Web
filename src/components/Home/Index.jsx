@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import videoSrc from '../../../public/video.mp4'; // Verifique se o caminho está correto
 
+
 // Estilização da Seção que conterá o vídeo de fundo
 const Section = styled.section`
   position: relative;
@@ -117,12 +118,12 @@ export default function Index() {
         </BackgroundVideo>
 
         {/* Texto Centralizado */}
-        <Text><a href="/loja" target='_blank'>Acesse nossa loja</a></Text>
+        <Text><a href="/loja">Acesse nossa loja</a></Text>
       </Section>
       <CardContainer>
         {/* CARD 1 */}
         <Card>
-          <CardImage src="../../public/img/noticia/img1.webp" alt="Imagem do Card" />
+          <CardImage src="../../img/noticia/img1.webp" alt="Imagem do Card" />
           <CardTitle>Pascal Wehrlein, da Porsche, supera adversidades e conquista o Campeonato Mundial de Fórmula E em Londres</CardTitle>
           <CardContent>Wehrlein garantiu a vitória após uma temporada cheia de desafios, consolidando seu lugar entre os melhores da categoria elétrica.</CardContent>
           <CardButton href="https://www.fiaformulae.com/pt-br/news/504132" target="_blank" rel="noopener noreferrer">
@@ -131,7 +132,7 @@ export default function Index() {
         </Card>
         {/* CARD 2 */}
         <Card>
-          <CardImage src="../../../public/img/noticia/img2.webp" alt="Imagem do Card" />
+          <CardImage src="../../../img/noticia/img2.webp" alt="Imagem do Card" />
           <CardTitle>A parceria juntará o piloto mais experiente da Fórmula E com o único novato até agora, destacando o compromisso da Lola em desenvolver novos talentos e tecnologias no automobilismo.</CardTitle>
           <CardContent>Lola Yamaha ABT completa a formação de pilotos estreantes com o novato Zane Maloney se juntando ao “Sr. Fórmula E” Lucas di Grassi.</CardContent>
           <CardButton href="https://www.fiaformulae.com/pt-br/news/509022" target="_blank" rel="noopener noreferrer">
@@ -140,7 +141,7 @@ export default function Index() {
         </Card>
         {/* CARD 3 */}
         <Card>
-          <CardImage src="../../../public/img/noticia/img3.webp" alt="Imagem do Card" />
+          <CardImage src="../../../img/noticia/img3.webp" alt="Imagem do Card" />
           <CardTitle>Fórmula E definida para a Semana do Clima de Nova York</CardTitle>
           <CardContent>Líder em esporte global sustentável, a Fórmula E estará presente na Semana do Clima de Nova York, com a vice-presidente de Sustentabilidade, Julia Palle, programada para falar em diversos eventos.</CardContent>
           <CardButton href="https://www.fiaformulae.com/pt-br/news/508907" target="_blank" rel="noopener noreferrer">
@@ -149,7 +150,7 @@ export default function Index() {
         </Card>
         {/* CARD 4 */}
         <Card>
-          <CardImage src="../../../public/img/noticia/img4.webp" alt="Imagem do Card" />
+          <CardImage src="../../../img/noticia/img4.webp" alt="Imagem do Card" />
           <CardTitle>Buemi e Frijns retornam com a Envision Racing para a 11ª temporada</CardTitle>
           <CardContent>A Envision Racing tem o prazer de confirmar uma escalação de pilotos inalterada para a Temporada 11 do Campeonato Mundial de Fórmula E da ABB FIA. Sébastien Buemi e Robin Frijns continuarão com a equipe para a Temporada 11 do Campeonato Mundial de Fórmula E da ABB FIA.</CardContent>
           <CardButton href="https://www.fiaformulae.com/pt-br/news/508413" target="_blank" rel="noopener noreferrer">
@@ -158,7 +159,7 @@ export default function Index() {
         </Card>
         {/* CARD 5 */}
         <Card>
-          <CardImage src="../../../public/img/noticia/img5.webp" alt="Imagem do Card" />
+          <CardImage src="../../../img/noticia/img5.webp" alt="Imagem do Card" />
           <CardTitle>Fórmula E abre inscrições para o Fundo Better Futures da Temporada 11</CardTitle>
           <CardContent>A Fórmula E lançou hoje o processo de inscrição para seu principal programa de apoio beneficente, o Better Futures Fund, que fornecerá suporte direto a projetos de impacto local e causas em todos os locais de corrida na 11ª temporada.</CardContent>
           <CardButton href="https://www.fiaformulae.com/pt-br/news/508409" target="_blank" rel="noopener noreferrer">
@@ -167,7 +168,7 @@ export default function Index() {
         </Card>
         {/* CARD 6 */}
         <Card>
-          <CardImage src="../../../public/img/noticia/img6.webp" alt="Imagem do Card" />
+          <CardImage src="../../../img/noticia/img6.webp" alt="Imagem do Card" />
           <CardTitle>Lucas di Grassi: “10 anos de trabalho duro e noites sem dormir”</CardTitle>
           <CardContent>Dez anos atrás, hoje: Lucas di Grassi venceu o primeiro E-Prix para a ABT em Pequim. Desde então, a Fórmula E cresceu de força em força.</CardContent>
           <CardButton href="https://www.fiaformulae.com/pt-br/news/508221" target="_blank" rel="noopener noreferrer">
