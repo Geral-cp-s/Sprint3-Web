@@ -209,7 +209,7 @@ const Forum = () => {
 
                 {/* Comentários ao lado do formulário e vídeo */}
                 <div className='forum' id='comentario'>
-                    <h1>Comentarios</h1>
+                    <h1>Comentários</h1>
                     <Card />
                 </div>
 

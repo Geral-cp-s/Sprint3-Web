@@ -17,7 +17,7 @@ export const HeaderMenu = styled.nav`
 
   /* Logo */
   .nav__logo img {
-    height: 110px; /* Mantenha a altura do cabeçalho */
+    height: 90px; /* Mantenha a altura do cabeçalho */
     transform: scale(1.2); /* Aumente a escala do logo (ajuste conforme necessário) */
     transition: transform 0.3s ease; /* Adicione uma transição suave para o efeito de hover */
 
