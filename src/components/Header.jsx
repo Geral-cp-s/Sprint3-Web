@@ -52,6 +52,7 @@ const Header = () => {
             <ul className="nav__list">
               <li><Link to="/" className="nav__link">Home</Link></li>
               <li><Link to="/quem-somos" className="nav__link">Quem somos</Link></li>
+              <li><Link to='/loja' className='nav__link'>Loja</Link></li>
 
               <li className="dropdown__item">
                 <div className="nav__link">
