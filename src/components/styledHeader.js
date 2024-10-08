@@ -57,10 +57,9 @@ export const HeaderMenu = styled.nav`
 
     &:hover {
       color: rgba(233, 41, 41, 0.938); /* Mudando a cor do texto ao passar o mouse */
-      transform: translateY(-2px);
-      text-decoration: underline; /* Adiciona underline ao passar o mouse */
+       /* Adiciona underline ao passar o mouse */
     }
-  }
+  
 
   /* Menu Suspenso (Dropdown) */
   .dropdown__item {
@@ -86,12 +85,14 @@ export const HeaderMenu = styled.nav`
     z-index: 100; /* Garante que o dropdown esteja acima de outros elementos */
     font-family: "Roboto", system-ui;
     font-size: 20px;
+    pointer-events: auto;
 
     /* Removendo bolinhas do menu dropdown */
     .dropdown__list {
       list-style: none; /* Remove as bolinhas do dropdown */
       padding: 0; /* Remove o padding padrão */
       margin: 0; /* Remove a margem padrão */
+      
     }
 
     .dropdown__link {
@@ -99,8 +100,7 @@ export const HeaderMenu = styled.nav`
       padding: 0.5rem 1.5rem;
       display: block;
       text-decoration: none;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
+
 
       &:hover {
         background-color:rgba(233, 41, 41, 0.938);

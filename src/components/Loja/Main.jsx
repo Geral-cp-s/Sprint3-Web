@@ -39,6 +39,7 @@ const MainContent = () => {
         <BannerImage src={bannerImage} alt="Venda de campeonato" />
       </Banner>
 
+
       {/* Carrossel de produtos */}
       <CarouselContainer>
         <Arrow onClick={prevSlide}>&#8249;</Arrow>
@@ -71,6 +72,27 @@ const MainContent = () => {
         </ProductList>
         <Arrow onClick={nextSlide}>&#8250;</Arrow>
       </CarouselContainer>
+      <Desconto>
+      <h1>Equipes em destaque</h1>
+
+      <div>
+        
+        <div className="card">
+          <img className='dimg' src="/img/02022021_TESTHP_01.webp" alt="TAG Heuer Porsche" />
+          <h2>TAG Heuer Porsche</h2>
+          <div className="desconto"> Até 50% de desconto</div>
+          <button>Compre agora</button>
+        </div>
+
+        
+        <div className="card">
+          <img className='dimg' src="/img/jordan-kin.webp" alt="MAHINDRA" />
+          <h2>MAHINDRA</h2>
+          <div className="desconto"> Até 50% de desconto</div>
+          <button>Compre agora</button>
+        </div>
+      </div>
+    </Desconto>
     </ContentContainer>
   );
 };
@@ -80,6 +102,90 @@ export default MainContent;
 const ContentContainer = styled.div`
   padding: 20px;
 `;
+
+const Desconto = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  
+
+  /* Título principal acima das outras divs */
+  h1 {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 50px; /* Espaço abaixo do título */
+    font-family: "Audiowide", sans-serif;
+  }
+  h2{
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 40px;
+    font-family: "Roboto", system-ui;
+  }
+
+
+  /* Container dos cards */
+  > div {
+    display: flex;
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:space-between ;
+  }
+
+  /* Estilo dos cards */
+  .card {
+    background-color: #fff;      /* Fundo do card */
+    color: white;                /* Cor do texto */
+    border-radius: 8px;          /* Borda arredondada */
+    padding: 20px;               /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 45%;                  /* Largura do card */
+    text-align: center;          /* Centraliza o conteúdo */
+    transition: transform 0.3s ease; /* Transição para efeito de hover */
+
+    &:hover {
+      transform: translateY(-10px); /* Efeito de elevar ao passar o mouse */
+    }
+
+    img {
+      width: 100%;               /* Faz a imagem ocupar a largura do card */
+      border-radius: 8px;        /* Arredonda a imagem */
+      margin-bottom: 10px;       /* Espaço entre a imagem e o título */
+    }
+
+    h1 {
+      font-size: 24px;           /* Tamanho do título */
+      margin-bottom: 10px;       /* Espaço abaixo do título */
+    }
+
+    .desconto {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #0077ff;            /* Cor vermelha para destacar o desconto */
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #0077ff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #00c3ff; /* Efeito de hover no botão */
+      }
+    }
+  }
+
+`
+  
+
 
 const Banner = styled.div`
   display: flex;
@@ -100,6 +206,7 @@ const BannerContent = styled.div`
   h1 {
     font-size: 36px; /* Tamanho ajustado */
     margin-bottom: 10px; /* Ajuste da margem */
+    font-family: "Audiowide", sans-serif;
   }
 
   p {
@@ -127,7 +234,7 @@ const Button = styled.button`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color:#5A8EEB;
+    background-color:#00c3ff;
   }
 `;
 

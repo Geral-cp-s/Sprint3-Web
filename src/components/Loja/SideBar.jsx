@@ -88,9 +88,9 @@ const DropdownHeader = styled.div`
 `;
 
 const DropdownList = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
 
   li {
     margin-bottom: 8px;
@@ -99,14 +99,22 @@ const DropdownList = styled.ul`
     cursor: pointer;
     padding: 5px; /* Padding para as opções da lista */
     border-radius: 4px; /* Arredondamento dos cantos */
+    
 
     &:hover {
-      background-color: #5A8EEB; /* Cor ao passar o mouse */
+      background-color: #00c3ff; /* Cor ao passar o mouse */
     }
   }
+  a {
+      color: inherit; 
+      text-decoration: none; 
+      display: block; 
+      font-family: "Roboto", system-ui;
+    }
 `;
 
 const OffersTitle = styled.h3`
+  
   font-size: 18px; /* Tamanho da fonte */
   margin-top: 20px; /* Espaço acima */
   color: #333; /* Cor do texto */
@@ -119,5 +127,6 @@ const OffersTitle = styled.h3`
   &:hover {
     background-color: #e0e0e0; /* Cor ao passar o mouse */
   }
-`;
+  
+`
 

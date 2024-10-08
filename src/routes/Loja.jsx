@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Header from '../components/Loja/Header';
 import SideBar from '../components/Loja/SideBar';
 import MainContent from '../components/Loja/Main';
+;
 
 function Loja() {
   return (

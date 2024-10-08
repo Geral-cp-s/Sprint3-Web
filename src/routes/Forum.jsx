@@ -5,34 +5,43 @@ import styled from 'styled-components';
 
 const MainForum = styled.main`
 
+
 .forum-container {
-    display: flex;           
-    justify-content: space-between; 
-    gap: 20px;               
-    flex-wrap: wrap;       
+    display: flex;                /* Usando flexbox para organizar os elementos */
+    flex-direction: row;          /* Coloca os elementos lado a lado */
+    gap: 20px;                    /* Espaço entre o formulário e os comentários */
     margin: 30px;
-    
+    flex-wrap: wrap;              /* Permite que o layout se ajuste em telas menores */
+    width: 100%;
 }
 
-.forum {
-    width: 48%;              
+/* Container para o formulário e o vídeo */
+.forum-and-video {
+    display: flex;
+    flex-direction: column;       /* O vídeo ficará abaixo do formulário */
+    flex: 1;                      /* Ocupará parte do espaço total */
+}
+
+/* Formulário */
+#form {
     padding: 20px;
     background-color: var(--black-color-light);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-grow: 0;
     border: 6px solid rgba(233, 41, 41, 0.5);
 }
 
+/* Comentários */
 #comentario {
-    flex-grow: 1; 
+    flex: 1;                      /* Ocupa a outra parte do espaço */
+    padding: 20px;
+    background-color: var(--black-color-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 6px solid rgba(233, 41, 41, 0.5);
 }
 
-#form {
-    height: 30%;
-}
-
-
+/* Estilos do formulário */
 .forum form {
     display: flex;
     flex-direction: column;
@@ -43,7 +52,6 @@ const MainForum = styled.main`
     margin-bottom: 8px;
     color: #ffffffd1;
     padding-bottom: 10px;
-    
 }
 
 .forum input[type="text"] {
@@ -53,7 +61,6 @@ const MainForum = styled.main`
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    
 }
 
 .forum button {
@@ -71,6 +78,7 @@ const MainForum = styled.main`
     background-color: #ad3d3d;
 }
 
+/* Estilos dos comentários (Card) */
 .forum .card {
     margin-top: 20px;
     color: white;
@@ -80,25 +88,45 @@ const MainForum = styled.main`
     gap: 10px;
     display: flex;
     flex-direction: column;
-    img{
-        width: 40px;
-        height: 40px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        
-    }
 }
 
+.forum .card img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
+/* Título */
 h1 {
     color: white;
     margin: 20px;
     text-align: center;
     font-size: 40px;
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-    font-family: orbitron;
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Estilos para o vídeo */
+.video {
+    width: 100%;                   
+    margin-top: 20px;
+    border-radius: 8px;
+    border:6px solid rgb(143, 9, 9) ;
+}
+
+.video iframe {
+    width: 100%;                   
+    height: 500px;
     
 }
+
+.text{
+    background-color: rgba(0, 0, 0, 0.8) ;
+    margin: 1px;
+    padding: 15px;
+}
+
+
 
 `
 
@@ -151,30 +179,43 @@ const Forum = () => {
     return (
         <MainForum>
             <section className='forum-container'>
-                <div className='forum' id='form'>
-                    <h1>Fórum</h1>
-                    <form onSubmit={handleSubmit}>
-                        <label htmlFor="nome">Nome
-                            <input type="text" name='nome' value={forum.nome} onChange={handleChange} />
-                        </label>
 
-                        <label htmlFor="email">Email
-                            <input type="text" name='email' value={forum.email} onChange={handleChange} />
-                        </label>
+                {/* Formulário e vídeo juntos */}
+                <div className='forum-and-video'>
+                    <div className='forum' id='form'>
+                        <h1>Fórum</h1>
+                        <form onSubmit={handleSubmit}>
+                            <label htmlFor="nome">Nome
+                                <input type="text" name='nome' value={forum.nome} onChange={handleChange} />
+                            </label>
 
-                        <label htmlFor="descricao">Deixe um comentario
-                            <input type="text" name='descricao' value={forum.descricao} onChange={handleChange} />
-                        </label>
-                        <button type="submit">Enviar</button>
-                    </form>
+                            <label htmlFor="email">Email
+                                <input type="text" name='email' value={forum.email} onChange={handleChange} />
+                            </label>
+
+                            <label htmlFor="descricao">Deixe um comentario
+                                <input type="text" name='descricao' value={forum.descricao} onChange={handleChange} />
+                            </label>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+
+                    {/* Vídeo logo abaixo do formulário */}
+                    <div className='video'>
+                        <h1 className='text'>Assista Ao vivo</h1>
+                        <iframe src="https://www.youtube.com/embed/odGD7rMRqJQ?si=v5_Ef1KFAgVh6G6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
 
+                {/* Comentários ao lado do formulário e vídeo */}
                 <div className='forum' id='comentario'>
                     <h1>Comentarios</h1>
                     <Card />
                 </div>
+
             </section>
         </MainForum>
+
 
 
     )

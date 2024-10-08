@@ -30,6 +30,7 @@ export const CarImage = styled.img`
   width: 100%;
   max-width: 800px;
   display: block;
+  transition: transform 0.3s;
 
   
     &:hover {
