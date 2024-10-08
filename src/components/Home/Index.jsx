@@ -117,7 +117,7 @@ export default function Index() {
         </BackgroundVideo>
 
         {/* Texto Centralizado */}
-        <Text><a href="/loja" target='_blank'>Acesse nossa loja</a></Text>
+        <Text><a href="/loja">Acesse nossa loja</a></Text>
       </Section>
       <CardContainer>
         {/* CARD 1 */}
