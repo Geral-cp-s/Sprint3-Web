@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const FooterGeral = styled.footer`
+    font-family: "Roboto", system-ui;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,9 +18,6 @@ export const FooterGeral = styled.footer`
         width: 100%;
         max-width: 1200px;
         margin: 20px 0;
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-        font-family: orbitron;
-
     }
 
     nav ul {
@@ -42,13 +40,13 @@ export const FooterGeral = styled.footer`
     }
 
     nav ul li strong {
-        font-size: 16px;
+        font-size: 20px;
         text-transform: uppercase;
     }
 
     h5 {
-        font-size: 12px; /* Tamanho do texto do copyright */
-        margin-bottom: 10px;
+        font-size: 15px; /* Tamanho do texto do copyright */
+        margin: 10px;
     }
 
     a {

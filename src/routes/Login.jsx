@@ -11,14 +11,14 @@ const MainLogin = styled.main`
         text-align: center;
         height: 90dvh;
         margin: 25px;
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-        font-family: orbitron;
+        font-family: "Roboto", system-ui;
         font-size: 20px;
     }
 
 
 
     h1{
+        font-family: "Audiowide", sans-serif;
         font-weight: 700;
         letter-spacing: -1.5px;
         margin: 0;

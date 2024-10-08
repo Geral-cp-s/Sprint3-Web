@@ -2,11 +2,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  font-family: "Roboto", system-ui;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  margin: 10px;
 `;
 
 export const Title = styled.h1`
+  font-family: "Audiowide", sans-serif;
   text-align: center;
   color: #333;
   margin-bottom: 20px;
@@ -42,11 +44,13 @@ export const Detail = styled.div`
 `;
 
 export const Subtitle = styled.h2`
+  font-family: "Audiowide", sans-serif;
   color: #007BFF;
   margin-top: 20px;
 `;
 
 export const Subheading = styled.h3`
+  font-family: "Audiowide", sans-serif;
   color: #444;
   margin-top: 15px;
 `;

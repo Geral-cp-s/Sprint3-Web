@@ -10,7 +10,7 @@ const Footer = () => {
                     <li><strong>Geral</strong></li>
                     <li><a href="/">Home</a></li>
                     <li><a href="/quem-somos">Quem Somos</a></li>
-                    <li><a href="/pistas">Pistas</a></li>
+                    <li><a href="/pistas">Calendário</a></li>
                     <li><a href="/loja">Nossa loja</a></li>
                 </ul>
                 <ul>

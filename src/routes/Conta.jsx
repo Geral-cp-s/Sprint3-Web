@@ -22,6 +22,7 @@ const MainConta = styled.main`
     }
     
     #h2perfil {
+        font-family: "Audiowide", sans-serif;
         color: white;
     }
     

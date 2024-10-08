@@ -6,13 +6,12 @@ const PageTitle = styled.h1`
     font-size: 1.7; /* Tamanho da fonte */
     color: #1a252f; /* Cor do texto um pouco mais escura */
     text-align: center; /* Centraliza o título */
-    margin: 20px 0; /* Espaçamento em cima e embaixo */
+    margin: 30px 0; /* Espaçamento em cima e embaixo */
     font-weight: bold; /* Negrito */
     text-transform: uppercase; /* Transformação do texto para maiúsculas */
     letter-spacing: 1px; /* Espaçamento entre as letras */
     text-decoration: underline; /* Adiciona sublinhado */
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-    font-family: orbitron;
+    font-family: "Audiowide", sans-serif;
     text-decoration-color: red; /* Cor do sublinhado */
 `;
 

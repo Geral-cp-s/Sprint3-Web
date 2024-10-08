@@ -103,7 +103,7 @@ h1 {
     margin: 20px;
     text-align: center;
     font-size: 40px;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Audiowide", sans-serif;
 }
 
 /* Estilos para o vídeo */

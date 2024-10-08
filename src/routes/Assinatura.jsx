@@ -13,8 +13,7 @@ const MainAssinatura = styled.main`
         width: 100%; 
         max-width: 800px;
         margin-top: 55px;
-        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-        font-family: roboto;
+        font-family: "Audiowide", sans-serif;
         font-size: 50px;
     }
 

@@ -12,7 +12,8 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 2.5em;
+  font-family: "Audiowide", sans-serif;
+  font-size: 2.3em;
   margin-bottom: 30px; /* Aumentado para mais espaço abaixo do título */
   color: #2e86de;
   border-bottom: 2px solid #2e86de;
