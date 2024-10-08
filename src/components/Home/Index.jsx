@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import videoSrc from '../../../public/video.mp4'; // Verifique se o caminho está correto
-import { Link } from 'react-router-dom';
 
 
 // Estilização da Seção que conterá o vídeo de fundo
@@ -119,7 +118,7 @@ export default function Index() {
         </BackgroundVideo>
 
         {/* Texto Centralizado */}
-        <Text><Link to="/loja">Acesse nossa loja</Link></Text>
+        <Text><a href="/loja">Acesse nossa loja</a></Text>
       </Section>
       <CardContainer>
         {/* CARD 1 */}

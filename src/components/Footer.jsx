@@ -11,7 +11,7 @@ const Footer = () => {
                     <li><a href="/">Home</a></li>
                     <li><a href="/quem-somos">Quem Somos</a></li>
                     <li><a href="/pistas">Pistas</a></li>
-                    <li><Link to="/loja">Acesse nossa loja</Link></li>
+                    <li><a href="/loja">Nossa loja</a></li>
                 </ul>
                 <ul>
                     <li><strong>Equipes</strong></li>
