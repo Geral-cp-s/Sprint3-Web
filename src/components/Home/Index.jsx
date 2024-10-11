@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import videoSrc from '../../../public/video.mp4'; // Verifique se o caminho está correto
+import { Link } from 'react-router-dom';
+
 
 // Estilização da Seção que conterá o vídeo de fundo
 const Section = styled.section`
@@ -99,6 +101,13 @@ const LojaButton = styled.a`
     transform: translateY(-5px);
     box-shadow: 0 8px 16px #00c3ff83;
   }
+
+  .link{
+    text-decoration: none;
+    color: #fff;
+  }
+
+
 `;
 
 // Estilização da imagem (agora menor)
@@ -202,7 +211,7 @@ export default function Index() {
           <LojaText>
             Confira os melhores produtos sobre a melhor corrida elétrica do mundo e muito mais em nossa loja!
           </LojaText>
-          <LojaButton><Link to="/loja">Visite nossa loja</Link></LojaButton>
+          <LojaButton><Link className='link' to="/loja">Visite nossa loja</Link></LojaButton>
         </LojaTextContainer>
         {/* Imagem da loja à direita */}
         <LojaImage src="/img/produtos/prod.webp" alt="Imagem ilustrativa da loja" />
