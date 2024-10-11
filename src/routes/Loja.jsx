@@ -19,11 +19,11 @@ function Loja() {
 
 export default Loja;
 
-const AppContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+// const AppContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+// `;
 
-const Main = styled.main`
-  display: flex;
-`;
+// const Main = styled.main`
+//   display: flex;
+// `;
