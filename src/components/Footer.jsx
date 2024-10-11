@@ -8,33 +8,33 @@ const Footer = () => {
             <nav>
                 <ul>
                     <li><strong>Geral</strong></li>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/quem-somos">Quem Somos</a></li>
-                    <li><a href="/pistas">Calendário</a></li>
-                    <li><a href="/loja">Nossa loja</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/quem-somos">Quem Somos</Link></li>
+                    <li><Link to="/calendario">Calendário</Link></li>
+                    <li><Link to="/loja">Nossa Loja</Link></li>
                 </ul>
                 <ul>
                     <li><strong>Equipes</strong></li>
-                    <li><a href="/equipes/mahindra">Mahindra Racing</a></li>
-                    <li><a href="#">Tag Heuer Porsche</a></li>
-                    <li><a href="#">Neom McLaren</a></li>
-                    <li><a href="/equipes">Todas as equipes</a></li>
+                    <li><Link to="/equipes/mahindra">Mahindra Racing</Link></li>
+                    <li><Link to="#">Tag Heuer Porsche</Link></li>
+                    <li><Link to="#">Neom McLaren</Link></li>
+                    <li><Link to="/equipes">Todas as equipes</Link></li>
                 </ul>
                 <ul>
                     <li><strong>Fórmula-E</strong></li>
-                    <li><a href="/comparativos">Comparativos</a></li>
-                    <li><a href="/projeto">Projeto</a></li>
+                    <li><Link to="/comparativos">Comparativos</Link></li>
+                    <li><Link to="/projeto">Projeto</Link></li>
                 </ul>
                 <ul>
                     <li><strong>Usuário</strong></li>
-                    <li><a href="/conta">Conta</a></li>
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="/forum">Fórum</a></li>
+                    <li><Link to="/conta">Conta</Link></li>
+                    <li><Link to="/login">Login</Link></li>
+                    <li><Link to="/forum">Fórum</Link></li>
                 </ul>
             </nav>
-            <a href="https://github.com/Geral-cp-s/Sprint3-Web" target="_blank">
+            <Link to="https://github.com/Geral-cp-s/Sprint3-Web" target="_blank">
                 <FaGithub />
-            </a>
+            </Link>
         </FooterGeral>
     );
 };

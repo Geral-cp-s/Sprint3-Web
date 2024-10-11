@@ -202,7 +202,7 @@ export default function Index() {
           <LojaText>
             Confira os melhores produtos sobre a melhor corrida elétrica do mundo e muito mais em nossa loja!
           </LojaText>
-          <LojaButton href="/equipes">Visite Nossa Loja</LojaButton>
+          <LojaButton><Link to="/loja">Visite nossa loja</Link></LojaButton>
         </LojaTextContainer>
         {/* Imagem da loja à direita */}
         <LojaImage src="/img/produtos/prod.webp" alt="Imagem ilustrativa da loja" />
