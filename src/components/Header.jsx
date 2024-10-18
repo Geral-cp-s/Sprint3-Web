@@ -108,7 +108,7 @@ function Header() {
       <StyledNavbar expand="lg">
         <FullWidthContainer> {/* Usa o container de largura total */}
           <StyledBrand href="#home">
-            <img src="./public/img/G4_Tech-branco.png" alt="G4 Tech logo" />
+            <img src="/img/G4_Tech-branco.png" alt="G4 Tech logo" />
             
           </StyledBrand>
           <StyledToggle aria-controls="basic-navbar-nav" />

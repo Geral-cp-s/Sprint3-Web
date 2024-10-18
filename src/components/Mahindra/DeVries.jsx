@@ -16,11 +16,11 @@ function DeVries() {
   return (
     <>
       <DriverCard onClick={openModal}>
-        <DriverImage src="../../../img/mahindra/nyckdevries.png" alt="Nick de Vries" />
+        <DriverImage src="/img/mahindra/nyckdevries.png" alt="Nick de Vries" />
         <DriverName>Nick de Vries</DriverName>
         <DriverNumber>21</DriverNumber>
         <p>
-          <CountryFlag src="../../../img/bandeira/holanda.jpg" alt="Bandeira da Holanda" />
+          <CountryFlag src="/img/bandeira/holanda.jpg" alt="Bandeira da Holanda" />
           Holanda
         </p>
       </DriverCard>
@@ -137,9 +137,11 @@ const modalTitleStyles = {
 };
 
 const modalImageStyles = {
-  width: '80%',  // Ajustando para 80% para ser responsivo
+  width: '70%',
   borderRadius: '10px',
   marginBottom: '20px',
+  display: 'block', // Garante que a imagem seja tratada como bloco
+  margin: '0 auto', // Centraliza horizontalmente
 };
 
 const legendaStyles = {

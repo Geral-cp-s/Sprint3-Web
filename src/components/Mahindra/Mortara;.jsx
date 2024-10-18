@@ -18,11 +18,11 @@ function EdoardoMortara() {
   return (
     <>
       <DriverCard onClick={openModal}>
-        <DriverImage src="../../../img/mahindra/edoardo.png" alt="Edoardo Mortara" />
+        <DriverImage src="/img/mahindra/edoardo.png" alt="Edoardo Mortara" />
         <DriverName>Edoardo Mortara</DriverName>
         <DriverNumber>48</DriverNumber>
         <p>
-          <CountryFlag src="../../../img/bandeira/suica.jpg" alt="Bandeira da Suíça" />
+          <CountryFlag src="/img/bandeira/suica.jpg" alt="Bandeira da Suíça" />
           Suíça
         </p>
       </DriverCard>
@@ -139,9 +139,11 @@ const modalTitleStyles = {
 };
 
 const modalImageStyles = {
-  width: '80%',  // Ajustando para 80% para ser responsivo
+  width: '70%',
   borderRadius: '10px',
   marginBottom: '20px',
+  display: 'block', // Garante que a imagem seja tratada como bloco
+  margin: '0 auto', // Centraliza horizontalmente
 };
 
 const legendaStyles = {

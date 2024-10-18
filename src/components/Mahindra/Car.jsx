@@ -17,7 +17,7 @@ function Car() {
 
   return (
     <>
-      <CarImage src="../../../img/mahindra/carro.png" alt="Mahindra Car" onClick={openModal} />
+      <CarImage src="/img/mahindra/carro.png" alt="Mahindra Car" onClick={openModal} />
       
       {/* Modal */}
       {isModalOpen && (
@@ -27,7 +27,7 @@ function Car() {
               &times;
             </span>
             <h2 style={modalTitleStyles}>Informações do carro</h2>
-            <img src="../../../public/img/mahindra/carro.png" alt="Mahindra Car" style={modalImageStyles} />
+            <img src="/public/img/mahindra/carro.png" alt="Mahindra Car" style={modalImageStyles} />
             <div style={detailsContainerStyles}>
               <div style={detailItemStyles}>
                 <span>Motor:</span>
@@ -107,6 +107,8 @@ const modalImageStyles = {
   width: '70%',
   borderRadius: '10px',
   marginBottom: '20px',
+  display: 'block', // Garante que a imagem seja tratada como bloco
+  margin: '0 auto', // Centraliza horizontalmente
 };
 
 const detailsContainerStyles = {

@@ -4,9 +4,9 @@ import { TeamInfoContainer, Logo, Bandeira } from './styledMahindra'; // Supondo
 function Sede() {
   return (
     <TeamInfoContainer>
-      <Logo src="../../../public/img/mahindra/mahindra.png" alt="Mahindra Logo" />
+      <Logo src="/img/mahindra/mahindra.png" alt="Mahindra Logo" />
       <p>
-        <Bandeira src="../../../public/img/bandeira/londres.png" alt="Banbury, REINO UNIDO" />
+        <Bandeira src="/img/bandeira/londres.png" alt="Banbury, REINO UNIDO" />
         Banbury, REINO UNIDO
       </p>
     </TeamInfoContainer>
