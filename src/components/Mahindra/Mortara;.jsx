@@ -4,11 +4,9 @@ import { DriverCard, DriverImage, DriverName, DriverNumber, CountryFlag } from '
 function EdoardoMortara() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Funções para abrir e fechar o modal
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  // Fechar o modal se clicar fora dele
   const handleClickOutside = (event) => {
     if (event.target.className === 'modal') {
       closeModal();
@@ -96,18 +94,20 @@ function EdoardoMortara() {
   );
 }
 
-// Estilos inline do modal (pode ser movido para o arquivo CSS separado)
+// Estilos responsivos do modal
 const modalStyles = {
-  display: 'block',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
   position: 'fixed',
   zIndex: 1,
   left: 0,
   top: 0,
   width: '100%',
   height: '100%',
-  overflow: 'auto',
   backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  paddingTop: '60px',
+  paddingTop: '10px',
+  paddingBottom: '10px',
 };
 
 const modalContentStyles = {
@@ -117,7 +117,7 @@ const modalContentStyles = {
   border: '1px solid #ccc',
   borderRadius: '10px',
   boxShadow: '0 5px 15px rgba(0, 0, 0, 0.3)',
-  width: '90%',  // Largura do modal ajustada para ser responsiva
+  width: '90%',
   maxWidth: '500px',
   textAlign: 'center',
   animation: 'fadeIn 0.5s',
@@ -142,8 +142,8 @@ const modalImageStyles = {
   width: '70%',
   borderRadius: '10px',
   marginBottom: '20px',
-  display: 'block', // Garante que a imagem seja tratada como bloco
-  margin: '0 auto', // Centraliza horizontalmente
+  display: 'block',
+  margin: '0 auto',
 };
 
 const legendaStyles = {
@@ -154,8 +154,8 @@ const legendaStyles = {
 
 const statsContainerStyles = {
   display: 'flex',
-  flexDirection: 'column', // Mudando para coluna para telas menores
-  alignItems: 'center', // Centralizando os itens
+  flexDirection: 'column',
+  alignItems: 'center',
   marginBottom: '20px',
 };
 
@@ -163,14 +163,14 @@ const statItemStyles = {
   textAlign: 'center',
   fontSize: '18px',
   color: '#555',
-  width: '100%', // Permitindo que ocupe a largura total
+  width: '100%',
   padding: '5px 0',
 };
 
 const careerDataContainerStyles = {
   margin: '20px 0',
   textAlign: 'left',
-  width: '100%', // Para garantir que ocupe a largura total
+  width: '100%',
 };
 
 const careerDataItemStyles = {
@@ -184,7 +184,7 @@ const careerDataItemStyles = {
 const careerStatsContainerStyles = {
   margin: '20px 0',
   textAlign: 'left',
-  width: '100%', // Para garantir que ocupe a largura total
+  width: '100%',
 };
 
 const careerStatItemStyles = {
@@ -195,7 +195,6 @@ const careerStatItemStyles = {
   color: '#333',
 };
 
-// Estilo da linha separadora
 const separatorStyles = {
   border: '0',
   borderTop: '1px solid #ccc',

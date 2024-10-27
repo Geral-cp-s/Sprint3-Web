@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
-// Estilos genéricos usados em diversos componentes
 export const TeamInfoContainer = styled.div`
   background: white;
   padding: 20px;
   text-align: center;
   margin-top: 6%;
-  
 `;
 
 export const Logo = styled.img`
@@ -21,101 +19,101 @@ export const Bandeira = styled.img`
 // Novo contêiner para a imagem do carro
 export const CarImage = styled.img`
   background-color: white;
-  background: white; /* Fundo branco */
-  padding: 50px; /* Espaçamento interno */
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  text-align: center; /* Centraliza o conteúdo */
-  margin: 60px auto; /* Margem automática para centralização */
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 60px auto;
   width: 100%;
   max-width: 800px;
   display: block;
+  cursor: pointer;
   transition: transform 0.3s;
 
-  
-    &:hover {
-      transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
-      box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.5); /* Cor de fundo ao passar o mouse */
-        } 
-  `;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.5);
+  } 
+`;
 
 export const ModalContainer = styled.div`
-  display: flex; /* Altera para flex para centralizar o conteúdo */
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  position: fixed; /* Fixa o modal na tela */
-  top: 0; /* Posiciona no topo da tela */
-  left: 0; /* Posiciona à esquerda */
-  right: 0; /* Estende até a direita */
-  bottom: 0; /* Estende até o fundo */
-  background: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
-  padding: 20px; /* Espaçamento interno */
-  z-index: 1000; /* Garante que o modal fique acima de outros elementos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  padding: 20px;
 `;
 
 export const ModalContent = styled.div`
-  background: white; /* Fundo branco para o conteúdo do modal */
+  background: white;
   padding: 20px;
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
-  max-width: 500px; /* Largura máxima do modal */
-  width: 100%; /* Largura responsiva */
-  transition: transform 0.3s; /* Transição suave para animação */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s;
 
-  /* Efeito de entrada */
   &.fade-in {
-    animation: fadeIn 0.3s; /* Animação de entrada */
+    animation: fadeIn 0.3s;
   }
 
-  /* Estilos para cabeçalho do modal */
   h2 {
-    margin: 0; /* Remove margem padrão */
-    font-size: 20px; /* Tamanho da fonte do título */
-    color: #333; /* Cor do texto */
-    
+    margin: 0;
+    font-size: 20px;
+    color: #333;
   }
 
-  /* Estilos para conteúdo do modal */
   p {
-    margin: 15px 0 0; /* Espaçamento entre parágrafos */
-    color: #666; /* Cor do texto */
-    line-height: 1.5; /* Espaçamento entre linhas */
-    
+    margin: 15px 0 0;
+    color: #666;
+    line-height: 1.5;
   }
 
-  /* Estilos para botão de fechamento */
   button {
-    background: #e74c3c; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none; /* Remove borda padrão */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 10px 15px; /* Espaçamento interno */
-    cursor: pointer; /* Cursor de ponteiro ao passar sobre */
-    transition: background 0.3s; /* Transição suave para hover */
-    
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+
     &:hover {
-      background: #c0392b; /* Cor de fundo ao passar o mouse */
+      background: #c0392b;
     }
   }
 
-  /* Animação de fade-in */
   @keyframes fadeIn {
     from {
-      opacity: 0; /* Começa invisível */
-      transform: translateY(-20px); /* Desloca para cima */
+      opacity: 0;
+      transform: translateY(-20px);
     }
     to {
-      opacity: 1; /* Fica visível */
-      transform: translateY(0); /* Volta à posição original */
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 `;
 
-
 export const CloseButton = styled.button`
-  background: red;
-  color: white;
+  background: transparent;
+  color: #e74c3c;
   font-size: 24px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #c0392b;
+  }
 `;
 
 export const ModalHeader = styled.h2`
@@ -123,10 +121,12 @@ export const ModalHeader = styled.h2`
 `;
 
 export const ModalImage = styled.img`
-  width: 180px;
+  width: 70%;
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  display: block;
 `;
 
-// Estilos para estatísticas
 export const StatisticsContainer = styled.div`
   background: white;
   padding: 20px;
@@ -157,48 +157,40 @@ export const StatBox = styled.div`
   min-width: 120px;
 `;
 
-// Estilos para pilotos
 export const DriverCard = styled.div`
   background: white;
   padding: 20px;
   text-align: center;
   margin: 10px;
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
-  transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para hover */
-  
-  /* Efeito de hover */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+
   &:hover {
-    transform: translateY(-3px); /* Elevação ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa ao passar o mouse */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
-  /* Estilos para elementos internos */
   h3 {
-    font-size: 18px; /* Tamanho da fonte do nome do piloto */
-    color: #333; /* Cor do texto */
-    margin-bottom: 10px; /* Espaçamento inferior */
-    
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
   }
 
   p {
-    font-size: 14px; /* Tamanho da fonte para descrição */
-    color: #666; /* Cor do texto para descrição */
-    line-height: 1.5; /* Espaçamento entre linhas */
-    margin: 0; /* Remove margens padrão */
-    
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
   }
 
-  /* Adicionando um efeito de contorno gradual */
-  border: 2px solid transparent; /* Borda padrão transparente */
-  transition: border-color 0.3s; /* Transição suave para a borda */
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
 
-  /* Efeito de contorno ao passar o mouse */
   &:hover {
-    border: 2px solid red; /* Contorno vermelho ao passar o mouse */
+    border: 2px solid red;
   }
 `;
-
 
 export const DriverImage = styled.img`
   width: 100%;
@@ -223,7 +215,6 @@ export const CountryFlag = styled.img`
   margin-right: 5px;
 `;
 
-// Estilos para "Quem É"
 export const QuemEContainer = styled.div`
   background: white;
   padding: 20px;
@@ -233,7 +224,6 @@ export const QuemEContainer = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 
-
   &:hover {
     transform: translateY(-2px);
   }
@@ -242,54 +232,48 @@ export const QuemEContainer = styled.div`
     padding: 15px;
   }
 
-  // Estilos para o texto
   h2 {
-    font-size: 24px; /* Tamanho da fonte */
-    font-weight: bold; /* Peso da fonte */
-    color: #333; /* Cor do texto */
-    margin-bottom: 10px; /* Espaçamento inferior */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
   }
 
   p {
-    font-size: 16px; /* Tamanho da fonte para parágrafos */
-    color: #666; /* Cor do texto para parágrafos */
-    line-height: 1.5; /* Espaçamento entre linhas */
-    margin: 0; /* Remover margens padrão */
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
   }
 `;
 
-
-// Adicione isso ao styles.js
 export const DriversContainer = styled.div`
   display: flex;
-  justify-content: space-around; /* Espaço igual entre os pilotos */
-  flex-wrap: wrap; /* Permite que os pilotos se movam para a próxima linha em telas menores */
-  margin-top: 20px; /* Margem superior */
-  padding: 20px; /* Adiciona espaçamento interno */
-  background: #f9f9f9; /* Cor de fundo leve para destacar os pilotos */
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   
   @media (max-width: 768px) {
-    justify-content: center; /* Centraliza os pilotos em telas menores */
+    justify-content: center;
   }
 
-  /* Estilo dos itens dentro do container (ex: cards dos pilotos) */
   & > div {
-    flex: 1 1 200px; /* Flexível com largura mínima */
-    margin: 10px; /* Espaçamento entre os itens */
-    padding: 15px; /* Padding interno dos itens */
-    background: white; /* Fundo branco para os itens */
-    border-radius: 8px; /* Bordas arredondadas para os itens */
-    border: 2px solid transparent; /* Borda padrão transparente */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave para os itens */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves para hover */
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 
-    /* Efeito de hover */
     &:hover {
-      transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
-      box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.5); /* Efeito de contorno vermelho gradativo */
+      transform: translateY(-5px);
+      box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.5);
     }
   }
 `;
-
