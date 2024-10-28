@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     //Elemento FILHO
     children:[
       {path:'/', element:<Home/>},
-      {path:'/calendario', element:<Pistas/>},
+      {path:'/pistas', element:<Pistas/>},
       {path:'/login', element:<Login/>},
       {path:'/quem-somos', element:<QuemSomos/>},
       {path:'/comparativos', element:<Comparativos/>},

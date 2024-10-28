@@ -1,37 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { HeaderMenu } from './styledHeader';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const location = useLocation(); // Hook para pegar a localização atual
+  const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const toggleMenu = () => {
-      const nav = document.getElementById('nav-menu');
-      const toggle = document.getElementById('nav-toggle');
+    setMenuOpen(false); // Fecha o menu ao trocar de página
+  }, [location]);
 
-      nav.classList.toggle('show-menu');
-      toggle.classList.toggle('show-icon');
-    };
-
-    const toggle = document.getElementById('nav-toggle');
-    toggle.addEventListener('click', toggleMenu);
-
-    // Fecha o menu ao trocar de página
-    const closeMenu = () => {
-      const nav = document.getElementById('nav-menu');
-      const toggle = document.getElementById('nav-toggle');
-
-      nav.classList.remove('show-menu');
-      toggle.classList.remove('show-icon');
-    };
-
-    closeMenu(); // Fecha o menu no início, se necessário
-
-    return () => {
-      toggle.removeEventListener('click', toggleMenu);
-    };
-  }, [location]); // Adiciona 'location' como dependência para o efeito
+  const toggleMenu = () => {
+    setMenuOpen(prevState => !prevState);
+  };
 
   return (
     <HeaderMenu>
@@ -42,13 +23,16 @@ const Header = () => {
               <img src="/img/G4_Tech-branco.png" alt="Logo" />
             </Link>
 
-            <div className="nav__toggle" id="nav-toggle">
-              <i className="ri-menu-line nav__burger"></i>
-              <i className="ri-close-line nav__close"></i>
+            <div className="nav__toggle" onClick={toggleMenu} id="nav-toggle">
+              {menuOpen ? (
+                <i className="ri-close-line nav__close"></i>
+              ) : (
+                <i className="ri-menu-line nav__burger"></i>
+              )}
             </div>
           </div>
 
-          <div className={`nav__menu`} id="nav-menu">
+          <div className={`nav__menu ${menuOpen ? 'show-menu' : ''}`} id="nav-menu">
             <ul className="nav__list">
               <li><Link to="/" className="nav__link">Home</Link></li>
               <li><Link to="/quem-somos" className="nav__link">Quem somos</Link></li>

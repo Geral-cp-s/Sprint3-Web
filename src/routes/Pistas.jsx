@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Card, DateSection, DetailsSection, FlagSection, ImageSection, Modal, ModalContent, CloseButton, EventDetails } from "../components/Pistas/styledPistas";
+import { Container, Card, DateSection, DetailsSection, FlagSection, ImageSection, Modal, ModalContent, CloseButton,  } from "../components/Pistas/styledPistas";
 import ModalInfo from "../components/Pistas/ModalInfo";
 
 import flagBra from '../../public/img/bandeira/brasil.png';
