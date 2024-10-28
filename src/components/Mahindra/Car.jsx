@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CarImage, Modal, ModalContent, CloseButton, ModalTitle, ModalImage, DetailsContainer, DetailItem, Separator } from './styledMahindra';
+import { CarImage, ModalContent, CloseButton, ModalImage } from './styledMahindra';
 
 function Car() {
   const [isModalOpen, setIsModalOpen] = useState(false);
