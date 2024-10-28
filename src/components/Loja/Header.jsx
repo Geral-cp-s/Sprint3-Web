@@ -27,7 +27,7 @@ export default Header;
 const HeaderContainer = styled.header`
   display: flex;
   justify-content: center; /* Centraliza o conteúdo do Header */
-  background-color:#fff;
+  background-color: #fff;
   color: var(--black-color-light);
   padding: 15px 20px; /* Aumenta o padding */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
@@ -38,8 +38,10 @@ const Nav = styled.nav`
   gap: 50px; /* Aumenta o espaçamento entre os itens (ajustado para 50px) */
   align-items: center; /* Centraliza verticalmente os itens do nav */
   font-weight: 600;
-  
-  
+
+  @media (max-width: 768px) {
+    gap: 20px; /* Reduz o espaçamento em telas menores */
+  }
 `;
 
 const NavItem = styled.div`
@@ -49,15 +51,13 @@ const NavItem = styled.div`
   cursor: pointer;
   text-transform: uppercase;
   padding: 5px;
-  transition: color 0.3s; /* Adiciona transição suave para a cor */
-  margin: 0 10px; /* Adiciona espaçamento horizontal entre os itens */
   transition: transform 0.3s ease, background-color 0.3s ease;
+  margin: 0 10px; /* Adiciona espaçamento horizontal entre os itens */
+  
   &:hover {
-        transform: translateY(-4px); 
-        text-decoration: underline; /* Adiciona underline ao passar o mouse */
-      }
-    
-
+    transform: translateY(-4px); 
+    text-decoration: underline; /* Adiciona underline ao passar o mouse */
+  }
 `;
 
 const FreeShippingBanner = styled.div`
@@ -69,4 +69,7 @@ const FreeShippingBanner = styled.div`
   font-weight: bold;
   border: 2px solid #0000007a;
 
+  @media (max-width: 768px) {
+    font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+  }
 `;

@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import bannerImage from '../../../public/img/produtos/bones.jfif'; // Certifique-se de que o caminho esteja correto
+import bannerImage from '../../../public/img/produtos/bones.jfif';
 
 const MainContent = () => {
-  const [currentSlide, setCurrentSlide] = useState(1); // Começar no primeiro "produto" real
+  const [currentSlide, setCurrentSlide] = useState(1);
 
   const products = [
     { id: 1, img: '../../../img/produtos/bone.webp', name: 'Boné New Era Repreve 9FORTY', price: 'R$160,00' },
@@ -17,8 +17,8 @@ const MainContent = () => {
     { id: 9, img: '../../../img/produtos/moletbranco.jpg', name: 'Moletom Gradiente', price: 'R$230,00' }
   ];
 
-  const itemsPerSlide = 3; // Exibir 3 produtos por vez
-  const totalSlides = products.length; // Número total de produtos
+  const itemsPerSlide = 3; // Ajuste conforme necessário
+  const totalSlides = Math.ceil(products.length / itemsPerSlide);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === totalSlides ? 1 : prev + 1));
@@ -39,19 +39,9 @@ const MainContent = () => {
         <BannerImage src={bannerImage} alt="Venda de campeonato" />
       </Banner>
 
-
-      {/* Carrossel de produtos */}
       <CarouselContainer>
         <Arrow onClick={prevSlide}>&#8249;</Arrow>
         <ProductList style={{ transform: `translateX(-${((currentSlide - 1) * 100) / itemsPerSlide}%)` }}>
-          {/* Adiciona o último conjunto de produtos no início */}
-          <ProductCard>
-            <ProductImage src={products[totalSlides - 1].img} alt={products[totalSlides - 1].name} />
-            <ProductInfo>
-              <h3>{products[totalSlides - 1].name}</h3>
-              <p>{products[totalSlides - 1].price}</p>
-            </ProductInfo>
-          </ProductCard>
           {products.map((product) => (
             <ProductCard key={product.id}>
               <ProductImage src={product.img} alt={product.name} />
@@ -61,38 +51,28 @@ const MainContent = () => {
               </ProductInfo>
             </ProductCard>
           ))}
-          {/* Adiciona o primeiro conjunto de produtos no final */}
-          <ProductCard>
-            <ProductImage src={products[0].img} alt={products[0].name} />
-            <ProductInfo>
-              <h3>{products[0].name}</h3>
-              <p>{products[0].price}</p>
-            </ProductInfo>
-          </ProductCard>
         </ProductList>
         <Arrow onClick={nextSlide}>&#8250;</Arrow>
       </CarouselContainer>
+
       <Desconto>
-      <h1>Equipes em destaque</h1>
+        <h1>Equipes em destaque</h1>
+        <div>
+          <Card>
+            <img className='dimg' src="/img/02022021_TESTHP_01.webp" alt="TAG Heuer Porsche" />
+            <h2>TAG Heuer Porsche</h2>
+            <div className="desconto">Até 50% de desconto</div>
+            <button>Compre agora</button>
+          </Card>
 
-      <div>
-        
-        <div className="card">
-          <img className='dimg' src="/img/02022021_TESTHP_01.webp" alt="TAG Heuer Porsche" />
-          <h2>TAG Heuer Porsche</h2>
-          <div className="desconto"> Até 50% de desconto</div>
-          <button>Compre agora</button>
+          <Card>
+            <img className='dimg' src="/img/jordan-kin.webp" alt="MAHINDRA" />
+            <h2>MAHINDRA</h2>
+            <div className="desconto">Até 50% de desconto</div>
+            <button>Compre agora</button>
+          </Card>
         </div>
-
-        
-        <div className="card">
-          <img className='dimg' src="/img/jordan-kin.webp" alt="MAHINDRA" />
-          <h2>MAHINDRA</h2>
-          <div className="desconto"> Até 50% de desconto</div>
-          <button>Compre agora</button>
-        </div>
-      </div>
-    </Desconto>
+      </Desconto>
     </ContentContainer>
   );
 };
@@ -108,133 +88,131 @@ const Desconto = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 30px;
-  
 
-  /* Título principal acima das outras divs */
   h1 {
     font-size: 36px;
     color: #000;
-    margin-bottom: 50px; /* Espaço abaixo do título */
+    margin-bottom: 50px;
     font-family: "Audiowide", sans-serif;
   }
-  h2{
-    font-size: 36px;
-    color: #000;
-    margin-bottom: 40px;
-    font-family: "Roboto", system-ui;
-  }
 
-
-  /* Container dos cards */
   > div {
     display: flex;
-    gap: 20px; /* Espaço entre os cards */
+    gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    justify-content:space-between ;
+    justify-content: space-between;
+  }
+`;
+
+const Card = styled.div`
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
   }
 
-  /* Estilo dos cards */
-  .card {
-    background-color: #fff;      /* Fundo do card */
-    color: white;                /* Cor do texto */
-    border-radius: 8px;          /* Borda arredondada */
-    padding: 20px;               /* Espaçamento interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-    width: 45%;                  /* Largura do card */
-    text-align: center;          /* Centraliza o conteúdo */
-    transition: transform 0.3s ease; /* Transição para efeito de hover */
+  img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .desconto {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #0077ff;
+  }
+
+  button {
+    padding: 10px 15px;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
     &:hover {
-      transform: translateY(-10px); /* Efeito de elevar ao passar o mouse */
-    }
-
-    img {
-      width: 100%;               /* Faz a imagem ocupar a largura do card */
-      border-radius: 8px;        /* Arredonda a imagem */
-      margin-bottom: 10px;       /* Espaço entre a imagem e o título */
-    }
-
-    h1 {
-      font-size: 24px;           /* Tamanho do título */
-      margin-bottom: 10px;       /* Espaço abaixo do título */
-    }
-
-    .desconto {
-      font-size: 18px;
-      margin-bottom: 15px;
-      color: #0077ff;            /* Cor vermelha para destacar o desconto */
-    }
-
-    button {
-      padding: 10px 15px;
-      background-color: #0077ff;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: #00c3ff; /* Efeito de hover no botão */
-      }
+      background-color: #00c3ff;
     }
   }
 
-`
-  
-
+  @media (max-width: 768px) {
+    width: 90%; /* Ocupa mais espaço em telas pequenas */
+  }
+`;
 
 const Banner = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   background: linear-gradient(135deg, #0077ff, #00c3ff);
   border-radius: 12px;
-  padding: 10px; /* Ajuste o padding conforme necessário */
-  min-height: 250px; /* Altura do banner */
+  padding: 20px;
+  min-height: 250px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px; /* Ajuste a margem conforme necessário */
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 const BannerContent = styled.div`
   color: white;
-  max-width: 500px;
+  text-align: center;
 
   h1 {
-    font-size: 36px; /* Tamanho ajustado */
-    margin-bottom: 10px; /* Ajuste da margem */
+    font-size: 24px;
+    margin-bottom: 10px;
     font-family: "Audiowide", sans-serif;
   }
 
   p {
-    font-size: 18px; /* Tamanho ajustado */
-    margin-bottom: 20px; /* Ajuste da margem */
+    font-size: 16px;
+    margin-bottom: 20px;
     color: #e0e0e0;
   }
 `;
 
 const BannerImage = styled.img`
-  width: 400px; /* Ajuste a largura conforme necessário */
+  width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  @media (min-width: 768px) {
+    width: 400px;
+  }
 `;
 
 const Button = styled.button`
   background-color: blue;
   color: white;
-  padding: 10px 20px; /* Ajuste o padding conforme necessário */
-  font-size: 16px; /* Tamanho ajustado */
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color:#00c3ff;
+    background-color: #00c3ff;
   }
 `;
 
@@ -244,11 +222,11 @@ const CarouselContainer = styled.div`
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin-top: 20px; /* Ajuste conforme necessário */
+  margin-top: 20px;
 `;
 
 const Arrow = styled.div`
-  font-size: 45px; /* Tamanho ajustado */
+  font-size: 45px;
   cursor: pointer;
   user-select: none;
   color: #0077ff;
@@ -268,7 +246,12 @@ const Arrow = styled.div`
 const ProductList = styled.div`
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: calc(100% * 3); /* A largura agora ocupa todo o espaço do carrossel */
+  width: calc(100% * 3);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-wrap: nowrap; /* Mantém os itens em uma linha em telas pequenas */
+  }
 `;
 
 const ProductCard = styled.div`
@@ -276,22 +259,18 @@ const ProductCard = styled.div`
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 10px; /* Ajuste o padding conforme necessário */
-  margin: 0 5px; /* Margem ajustada */
-  flex: 0 0 calc(100% / 3); /* Cada card ocupa 1/3 do espaço total */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+  margin: 5px; /* Margem ajustada */
+  flex: 1 0 calc(33.333% - 10px); /* Três produtos por linha */
 
-  &:hover {
-    transform: translateY(-3px); /* Efeito de hover */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  @media (max-width: 768px) {
+    flex: 1 0 calc(100% - 10px); /* Um produto por linha em telas pequenas */
   }
 `;
 
 const ProductImage = styled.img`
-  width: 100%; /* Ajuste a largura da imagem conforme necessário */
+  width: 100%;
   height: auto;
-  max-width: 150px; /* Ajuste a largura máxima conforme necessário */
-  margin: 0 auto; /* Centraliza a imagem no card */
   border-radius: 8px;
 `;
 
@@ -299,12 +278,12 @@ const ProductInfo = styled.div`
   margin-top: 10px;
 
   h3 {
-    font-size: 14px; /* Tamanho ajustado */
+    font-size: 14px;
     font-weight: bold;
   }
 
   p {
-    font-size: 12px; /* Tamanho ajustado */
+    font-size: 12px;
     color: #333;
   }
 `;

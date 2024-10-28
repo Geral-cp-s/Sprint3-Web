@@ -2,7 +2,6 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const SideBar = () => {
-  // Estados para controlar abertura dos dropdowns
   const [produtosOpen, setProdutosOpen] = useState(false);
   const [equipesOpen, setEquipesOpen] = useState(false);
 
@@ -46,7 +45,7 @@ const SideBar = () => {
         )}
       </Dropdown>
 
-      <OffersTitle><a href="#">Ofertas</a></OffersTitle> {/* Estiliza o título "Ofertas" */}
+      <OffersTitle><a href="#">Ofertas</a></OffersTitle>
     </SidebarContainer>
   );
 };
@@ -54,16 +53,15 @@ const SideBar = () => {
 export default SideBar;
 
 const SidebarContainer = styled.aside`
-  width: 400px; /* Aumentar a largura da sidebar */
+  width: 100%; /* A largura é 100% em dispositivos pequenos */
+  max-width: 400px; /* Limita a largura máxima */
   background-color: #e0e0e0;
   padding: 20px;
   font-size: 16px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 
-  h3 {
-    font-size: 18px;
-    margin-top: 20px;
-    color: #333; /* Cor do título */
+  @media (max-width: 768px) {
+    width: 100%; /* Largura total em dispositivos pequenos */
   }
 `;
 
@@ -76,57 +74,52 @@ const DropdownHeader = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  background-color: #f5f5f5; /* Cor de fundo do header do dropdown */
-  color: #333; /* Cor do texto */
-  padding: 10px; /* Padding para o header */
-  border-radius: 5px; /* Arredondamento dos cantos */
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #e0e0e0; /* Cor ao passar o mouse */
+    background-color: #e0e0e0;
   }
 `;
 
 const DropdownList = styled.ul`
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
 
   li {
     margin-bottom: 8px;
-    color: white;
-    background-color: #4169E1;
-    cursor: pointer;
-    padding: 5px; /* Padding para as opções da lista */
-    border-radius: 4px; /* Arredondamento dos cantos */
-    
 
-    &:hover {
-      background-color: #00c3ff; /* Cor ao passar o mouse */
+    a {
+      color: white;
+      background-color: #4169E1;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 4px;
+      display: block;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #00c3ff;
+      }
     }
   }
-  a {
-      color: inherit; 
-      text-decoration: none; 
-      display: block; 
-      font-family: "Roboto", system-ui;
-    }
 `;
 
 const OffersTitle = styled.h3`
-  
-  font-size: 18px; /* Tamanho da fonte */
-  margin-top: 20px; /* Espaço acima */
-  color: #333; /* Cor do texto */
-  cursor: pointer; /* Muda o cursor para pointer */
-  padding: 10px; /* Adiciona padding */
-  background-color: #f5f5f5; /* Cor de fundo */
-  border-radius: 5px; /* Arredondamento dos cantos */
-  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 
   &:hover {
-    background-color: #e0e0e0; /* Cor ao passar o mouse */
+    background-color: #e0e0e0;
   }
-  
-`
-
+`;
