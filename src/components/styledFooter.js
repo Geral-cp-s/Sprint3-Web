@@ -7,17 +7,27 @@ export const FooterGeral = styled.footer`
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color:var(--black-color-light);
+    background-color: var(--black-color-light);
     color: white;
     text-align: center;
 
     nav {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Quatro colunas */
+        grid-template-columns: repeat(4, 1fr); /* Quatro colunas em telas grandes */
         gap: 20px; /* Espaçamento entre as colunas */
         width: 100%;
         max-width: 1200px;
         margin: 20px 0;
+
+        /* Responsividade */
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr); /* Duas colunas em tablets */
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr; /* Uma coluna em celulares */
+            gap: 10px; /* Menor espaçamento em telas pequenas */
+        }
     }
 
     nav ul {
@@ -32,7 +42,7 @@ export const FooterGeral = styled.footer`
     nav ul li a {
         color: white;
         text-decoration: none;
-        font-size: 14px; /* Diminui o tamanho da fonte */
+        font-size: 14px;
     }
 
     nav ul li a:hover {

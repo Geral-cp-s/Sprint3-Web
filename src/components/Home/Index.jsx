@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import videoSrc from '../../../public/video.mp4'; // Verifique se o caminho está correto
+import videoSrc from '/video.mp4'; // Verifique se o caminho está correto
 import { Link } from 'react-router-dom';
 
 
