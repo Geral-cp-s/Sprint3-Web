@@ -16,7 +16,7 @@ export const HeaderMenu = styled.nav`
 
   /* Logo */
   .nav__logo img {
-    height: 90px; /* Mantenha a altura do cabeçalho */
+    height: 90px;
     transform: scale(1.2);
     transition: transform 0.3s ease;
   }
@@ -50,7 +50,7 @@ export const HeaderMenu = styled.nav`
     padding: 0.5rem 1rem;
     transition: color 0.3s ease, transform 0.2s ease; 
     text-align: left;
-    font-size: 28px;
+    font-size: 24px; /* Reduzido de 28px para 24px */
 
     &:hover {
       color: rgba(233, 41, 41, 0.938);
@@ -115,34 +115,31 @@ export const HeaderMenu = styled.nav`
     }
 
     .nav__menu {
-      display: none; /* Oculto por padrão */
+      display: none;
       flex-direction: column;
       gap: 1rem;
-      position: fixed; /* Fixo na tela */
-      top: 0; /* Alinha ao topo */
-      right: 0; /* Alinha à direita */
-      background-color: #222; /* Cor de fundo */
-      padding: 1rem 1.5rem; /* Ajuste do padding */
-      width: 100%; /* Largura total */
-      max-height: 80vh; /* Limita a altura para não cobrir toda a tela */
-      overflow-y: auto; /* Permite rolagem se necessário */
-      z-index: 1000; /* Z-index alto para sobrepor outros elementos */
-      
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #222;
+      padding: 1rem 1.5rem;
+      width: 100%;
+      max-height: 80vh;
+      overflow-y: auto;
+      z-index: 1000;
     }
 
     .nav__menu.show-menu {
-      display: flex; /* Mostra o menu quando a classe show-menu é adicionada */
+      display: flex;
     }
 
     .nav__list {
-      flex-direction: column; /* Coluna no mobile */
+      flex-direction: column;
       list-style: none;
-      
     }
 
     .nav__link {
       padding: 1rem;
-      
     }
 
     .dropdown__menu {
@@ -151,8 +148,7 @@ export const HeaderMenu = styled.nav`
     }
 
     .dropdown__item:hover .dropdown__menu {
-      display: block; /* Mostrar no hover */
+      display: block;
     }
   }
 `;
-
