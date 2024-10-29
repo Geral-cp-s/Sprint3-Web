@@ -46,17 +46,19 @@ const Corrida = () => {
     }
   `;
 
-  const PlayerCar = styled.div`
-    width: 50px;
-    height: 80px;
-    background: url('/img/carrocima.png') no-repeat center center;
-    background-size: contain;
-    position: absolute;
-    bottom: ${position.y}px;
-    left: ${position.x}px;
-    transition: left 0.1s, bottom 0.1s;
-    border-radius: 5px;
-  `;
+const PlayerCar = styled.div`
+  width: 30px; /* Ajusta a largura */
+  height: 50px; /* Ajusta a altura */
+  background: url('/img/carrocima.png');
+  background-size: 30px 50px; /* Ajusta o tamanho da imagem */
+  position: absolute;
+  bottom: ${position.y}px;
+  left: ${position.x}px;
+  transition: left 0.1s, bottom 0.1s;
+  border-radius: 5px;
+`;
+
+
 
   const OpponentCar = styled.div`
     width: 50px;

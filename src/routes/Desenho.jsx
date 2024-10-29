@@ -110,9 +110,9 @@ const Desenho = () => {
           for (const obstacle of obstacles) {
             if (
               newX < obstacle.x + obstacle.width &&
-              newX + 50 > obstacle.x &&
+              newX + 30 > obstacle.x && // Ajuste na largura do carro
               newY < obstacle.y + obstacle.height &&
-              newY + 120 > obstacle.y // Ajuste na altura do carro
+              newY + 60 > obstacle.y // Ajuste na altura do carro
             ) {
               setIsCrashed(true); // Define que houve uma colisão
               alert('Você colidiu com um obstáculo!');
@@ -160,7 +160,7 @@ const Desenho = () => {
 
       // Desenha o carro na nova posição
       const carImage = document.getElementById('carImage');
-      ctx.drawImage(carImage, carPosition.x, carPosition.y, 50, 120); // Altura alterada
+      ctx.drawImage(carImage, carPosition.x, carPosition.y, 30, 60); // Tamanho reduzido para 30x60
     }
   }, [linePath, carPosition, obstacles, lapCount, ctx]);
 
@@ -205,7 +205,7 @@ const Desenho = () => {
       />
       <img
         id="carImage"
-        src="/img/jogoCarro.png" 
+        src="public/img/image.png" 
         alt="Car"
         style={{ display: 'none' }} 
       />
