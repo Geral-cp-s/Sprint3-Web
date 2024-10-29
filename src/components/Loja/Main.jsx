@@ -55,6 +55,38 @@ const MainContent = () => {
         <Arrow onClick={nextSlide}>&#8250;</Arrow>
       </CarouselContainer>
 
+      <CarouselContainer>
+        <Arrow onClick={prevSlide}>&#8249;</Arrow>
+        <ProductList style={{ transform: `translateX(-${((currentSlide - 1) * 100) / itemsPerSlide}%)` }}>
+          {products.map((product) => (
+            <ProductCard key={product.id}>
+              <ProductImage src={product.img} alt={product.name} />
+              <ProductInfo>
+                <h3>{product.name}</h3>
+                <p>{product.price}</p>
+              </ProductInfo>
+            </ProductCard>
+          ))}
+        </ProductList>
+        <Arrow onClick={nextSlide}>&#8250;</Arrow>
+      </CarouselContainer>
+      
+      <CarouselContainer>
+        <Arrow onClick={prevSlide}>&#8249;</Arrow>
+        <ProductList style={{ transform: `translateX(-${((currentSlide - 1) * 100) / itemsPerSlide}%)` }}>
+          {products.map((product) => (
+            <ProductCard key={product.id}>
+              <ProductImage src={product.img} alt={product.name} />
+              <ProductInfo>
+                <h3>{product.name}</h3>
+                <p>{product.price}</p>
+              </ProductInfo>
+            </ProductCard>
+          ))}
+        </ProductList>
+        <Arrow onClick={nextSlide}>&#8250;</Arrow>
+      </CarouselContainer>
+
       <Desconto>
         <h1>Equipes em destaque</h1>
         <div>

@@ -26,21 +26,14 @@ const SideBar = () => {
       {/* Dropdown para Equipes */}
       <Dropdown>
         <DropdownHeader onClick={() => setEquipesOpen(!equipesOpen)}>
-          Equipes {equipesOpen ? '▲' : '▼'}
+          Modalidades {equipesOpen ? '▲' : '▼'}
         </DropdownHeader>
         {equipesOpen && (
           <DropdownList>
-            <li><a href="#">Mahindra</a></li>
-            <li><a href="#">Tag Heuer Porsche</a></li>
-            <li><a href="#">Neom McLaren</a></li>
-            <li><a href="#">ABT Cupra</a></li>
-            <li><a href="#">Andretti</a></li>
-            <li><a href="#">DS Penske</a></li>
-            <li><a href="#">Envision Racing</a></li>
-            <li><a href="#">ERT Formula e</a></li>
-            <li><a href="#">Jaguar TCS Racing</a></li>
-            <li><a href="#">Maserati MSG Racing</a></li>
-            <li><a href="#">Nissan</a></li>
+            <li><a href="#">Fórmula E</a></li>
+            <li><a href="#">Fórmula Truck</a></li>
+            <li><a href="#">Stock Car</a></li>
+            <li><a href="#">Fórmula Delta</a></li>
           </DropdownList>
         )}
       </Dropdown>
