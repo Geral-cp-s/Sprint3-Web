@@ -6,6 +6,11 @@ const Corrida = () => {
   const [opponents, setOpponents] = useState([]);
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const maxOpponents = 5;
+  const playerWidth = 30;
+  const playerHeight = 50;
+  const opponentWidth = 50;
+  const opponentHeight = 80;
 
   // Estilização dos componentes
   const GameContainer = styled.div`
@@ -17,7 +22,6 @@ const Corrida = () => {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    
   `;
 
   const Road = styled.div`
@@ -46,23 +50,21 @@ const Corrida = () => {
     }
   `;
 
-const PlayerCar = styled.div`
-  width: 30px; /* Ajusta a largura */
-  height: 50px; /* Ajusta a altura */
-  background: url('/img/carrocima.png');
-  background-size: 30px 50px; /* Ajusta o tamanho da imagem */
-  position: absolute;
-  bottom: ${position.y}px;
-  left: ${position.x}px;
-  transition: left 0.1s, bottom 0.1s;
-  border-radius: 5px;
-`;
-
-
+  const PlayerCar = styled.div`
+    width: ${playerWidth}px;
+    height: ${playerHeight}px;
+    background: url('/img/carrocima.png');
+    background-size: ${playerWidth}px ${playerHeight}px;
+    position: absolute;
+    bottom: ${position.y}px;
+    left: ${position.x}px;
+    transition: left 0.1s, bottom 0.1s;
+    border-radius: 5px;
+  `;
 
   const OpponentCar = styled.div`
-    width: 50px;
-    height: 80px;
+    width: ${opponentWidth}px;
+    height: ${opponentHeight}px;
     background: blue;
     position: absolute;
     top: ${({ top }) => top}px;
@@ -114,25 +116,35 @@ const PlayerCar = styled.div`
     const gameInterval = setInterval(() => {
       setScore((prevScore) => prevScore + 1);
 
-      if (Math.random() < 0.1) {
+      if (opponents.length < maxOpponents && Math.random() < 0.1) {
         setOpponents((prevOpponents) => [
           ...prevOpponents,
-          { top: -100, left: Math.floor(Math.random() * 350) },
+          { top: -100, left: Math.floor(Math.random() * (400 - opponentWidth)) },
         ]);
       }
 
       setOpponents((prevOpponents) =>
         prevOpponents
-          .map((opponent) => ({ ...opponent, top: opponent.top + 10 }))
+          .map((opponent) => ({ ...opponent, top: opponent.top + 15 }))
           .filter((opponent) => opponent.top < 600)
       );
 
       opponents.forEach((opponent) => {
+        const playerLeft = position.x;
+        const playerRight = position.x + playerWidth;
+        const playerTop = 600 - playerHeight - position.y; // Player bottom position in container
+        const playerBottom = playerTop + playerHeight;
+
+        const opponentLeft = opponent.left;
+        const opponentRight = opponent.left + opponentWidth;
+        const opponentTop = opponent.top;
+        const opponentBottom = opponent.top + opponentHeight;
+
         if (
-          opponent.top >= 520 &&
-          opponent.top <= 600 &&
-          opponent.left > position.x - 50 &&
-          opponent.left < position.x + 50
+          playerRight > opponentLeft &&
+          playerLeft < opponentRight &&
+          playerBottom > opponentTop &&
+          playerTop < opponentBottom
         ) {
           setGameOver(true);
           clearInterval(gameInterval);
