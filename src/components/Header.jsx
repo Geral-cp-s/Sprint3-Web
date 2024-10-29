@@ -33,7 +33,7 @@ const Header = () => {
       <header className="header">
         <nav className="nav-container">
           <div className="nav__data">
-            <Link to="/" className="nav__logo">
+            <Link to="/quem-somos" className="nav__logo">
               <img src="/img/G4_Tech-branco.png" alt="Logo" />
             </Link>
 
@@ -49,7 +49,6 @@ const Header = () => {
           <div ref={menuRef} className={`nav__menu ${menuOpen ? 'show-menu' : ''}`} id="nav-menu">
             <ul className="nav__list">
               <li><Link to="/" className="nav__link" onClick={() => setMenuOpen(false)}>Home</Link></li>
-              <li><Link to="/quem-somos" className="nav__link" onClick={() => setMenuOpen(false)}>Quem somos</Link></li>
               <li className="dropdown__item">
                 <div className="nav__link">
                   Equipes <i className="ri-arrow-down-s-line dropdown__arrow"></i>

@@ -127,6 +127,7 @@ export const HeaderMenu = styled.nav`
       max-height: 80vh; /* Limita a altura para não cobrir toda a tela */
       overflow-y: auto; /* Permite rolagem se necessário */
       z-index: 1000; /* Z-index alto para sobrepor outros elementos */
+      
     }
 
     .nav__menu.show-menu {
@@ -136,10 +137,12 @@ export const HeaderMenu = styled.nav`
     .nav__list {
       flex-direction: column; /* Coluna no mobile */
       list-style: none;
+      
     }
 
     .nav__link {
       padding: 1rem;
+      
     }
 
     .dropdown__menu {
