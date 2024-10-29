@@ -69,6 +69,7 @@ const Header = () => {
                 <ul className="dropdown__menu">
                   <li><Link to="/comparativos" className="dropdown__link" onClick={() => setMenuOpen(false)}>Comparativos</Link></li>
                   <li><Link to="/projeto" className="dropdown__link" onClick={() => setMenuOpen(false)}>Projeto</Link></li>
+                  <li><Link to="/minigames" className="dropdown__link" onClick={() => setMenuOpen(false)}>Mini-Jogos</Link></li>
                 </ul>
               </li>
 
@@ -79,9 +80,10 @@ const Header = () => {
                   Usuário <i className="ri-arrow-down-s-line dropdown__arrow"></i>
                 </div>
                 <ul className="dropdown__menu">
-                  <li><Link to="/conta" className="dropdown__link" onClick={() => setMenuOpen(false)}>Conta</Link></li>
                   <li><Link to="/login" className="dropdown__link" onClick={() => setMenuOpen(false)}>Login</Link></li>
+                  <li><Link to="/conta" className="dropdown__link" onClick={() => setMenuOpen(false)}>Conta</Link></li>
                   <li><Link to="/forum" className="dropdown__link" onClick={() => setMenuOpen(false)}>Forum</Link></li>
+                  <li><Link to="/assinatura" className="dropdown__link" onClick={() => setMenuOpen(false)}>Assinatura</Link></li>
                 </ul>
               </li>
             </ul>

@@ -16,6 +16,10 @@ import Projeto from  './routes/Projeto.jsx'
 import Conta from './routes/Conta.jsx'
 import Assinatura from './routes/Assinatura.jsx'
 import Loja from './routes/Loja.jsx'
+import Memoria from './routes/Memoria.jsx'
+import Corrida from './routes/Corrida.jsx'
+import MiniGames from './routes/MiniGames.jsx'
+import Desenho from './routes/Desenho.jsx'
 
 
 const router = createBrowserRouter([
@@ -37,6 +41,10 @@ const router = createBrowserRouter([
       {path:'/conta', element:<Conta/>},
       {path:'/assinatura', element:<Assinatura/>},
       {path:'/loja', element:<Loja/>},
+      {path:'/memoria', element:<Memoria/>},
+      {path:'/corrida', element:<Corrida/>},
+      {path:'/minigames', element:<MiniGames/>},
+      {path:'/desenho', element:<Desenho/>},
 
       //Chamando as equipes
       {path:'/equipes/mahindra', element:<Mahindra/>}

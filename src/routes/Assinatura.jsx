@@ -146,15 +146,17 @@ const MainAssinatura = styled.main`
     
     #bronze{
         border: 5px solid rgb(205, 127, 50);
-        padding: 11px;
+        padding: 15px;
     }
     #ouro{
         border: 5px solid rgb(255, 215, 0);
         padding: 15px;
+        
     }
 
     #prata{
         border: 5px solid #888;
+        padding: 15px;
     }
 
     #bronzep{
@@ -182,7 +184,7 @@ const Assinatura = () => {
                     <div class="inner">
                         <span class="pricing" id="bronzep">
                             <span>
-                                R$49 <small>/ m</small>
+                                R$14,90 <small>/ m</small>
                             </span>
                         </span>
                         <p class="title">Basic +</p>
@@ -195,7 +197,7 @@ const Assinatura = () => {
                                         <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
                                     </svg>
                                 </span>
-                                <span>Descontos de 5% na loja</span>
+                                <span>Assistir Sem Anúncios (parcial)</span>
                             </li>
                             <li>
                                 <span class="icon">
@@ -213,7 +215,7 @@ const Assinatura = () => {
                                         <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
                                     </svg>
                                 </span>
-                                <span>Acesso completo ao fórum</span>
+                                <span>Descontos de 5% na loja</span>
                             </li>
                         </ul>
                         <div class="action">
@@ -228,7 +230,7 @@ const Assinatura = () => {
                     <div class="inner">
                         <span class="pricing" id="pratap">
                             <span>
-                                R$69 <small>/ m</small>
+                                R$35,90 <small>/ m</small>
                             </span>
                         </span>
                         <p class="title">Premium +</p>
@@ -241,7 +243,7 @@ const Assinatura = () => {
                                         <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
                                     </svg>
                                 </span>
-                                <span>Desconto de 10% na loja</span>
+                                <span>Assistir Sem Anúncios (completo)</span>
                             </li>
                             <li>
                                 <span class="icon">
@@ -259,7 +261,7 @@ const Assinatura = () => {
                                         <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
                                     </svg>
                                 </span>
-                                <span>Acesso completo ao fórum</span>
+                                <span>Desconto de 10% na loja</span>
                             </li>
                         </ul>
                         <div class="action">
@@ -274,7 +276,7 @@ const Assinatura = () => {
                     <div class="inner">
                         <span class="pricing" id="ourop">
                             <span>
-                                R$89 <small>/ m</small>
+                                R$69,90 <small>/ m</small>
                             </span>
                         </span>
                         <p class="title">PRO</p>
@@ -287,25 +289,34 @@ const Assinatura = () => {
                                         <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
                                     </svg>
                                 </span>
+                                <span>Assistir Sem Anúncios (completo)</span>
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                                    </svg>
+                                </span>
+                                <span>Brindes mensais</span>
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                                    </svg>
+                                </span>
+                                <span>Acesso a um grupo VIP</span>
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                        <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                                    </svg>
+                                </span>
                                 <span>Desconto de 20% na loja</span>
-                            </li>
-                            <li>
-                                <span class="icon">
-                                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                        <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                                    </svg>
-                                </span>
-                                <span>Acesso aos bastidores</span>
-                            </li>
-                            <li>
-                                <span class="icon">
-                                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                        <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                                    </svg>
-                                </span>
-                                <span>Badge Pro no fórum</span>
                             </li>
                         </ul>
                         <div class="action">
